@@ -1,0 +1,1070 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "title": "拆积木",
+      "principle": "组块记忆",
+      "goal": "看到单词，拆成词头、词根、词尾",
+      "passScore": 6,
+      "coach": "不要一个字母一个字母死记。拆成积木——认识每一块，就认识这个词。",
+      "questions": [
+        {
+          "type": "split",
+          "prompt": "helpful = ___ + ___",
+          "word": "helpful",
+          "options": [
+            "help + ful",
+            "hel + pful",
+            "helpful",
+            "help + full"
+          ],
+          "answer": "help + ful",
+          "hint": "root + -ful"
+        },
+        {
+          "type": "split",
+          "prompt": "harmful = ___ + ___",
+          "word": "harmful",
+          "options": [
+            "harm + ful",
+            "har + mful",
+            "harmful",
+            "harm + full"
+          ],
+          "answer": "harm + ful"
+        },
+        {
+          "type": "split",
+          "prompt": "really = ___ + ___",
+          "word": "really",
+          "options": [
+            "real + ly",
+            "re + ally",
+            "really",
+            "rea + lly"
+          ],
+          "answer": "real + ly"
+        },
+        {
+          "type": "split",
+          "prompt": "recyclable = ___ + ___ + ___",
+          "word": "recyclable",
+          "options": [
+            "re + cycle + able",
+            "recy + clable",
+            "re + cyclable",
+            "recycle + able"
+          ],
+          "answer": "re + cycle + able"
+        },
+        {
+          "type": "split",
+          "prompt": "traditional = ___ + ___",
+          "word": "traditional",
+          "options": [
+            "tradition + al",
+            "trad + itional",
+            "traditional",
+            "tra + ditional"
+          ],
+          "answer": "tradition + al"
+        },
+        {
+          "type": "split",
+          "prompt": "famous = ___ + ___ (drop e from fame)",
+          "word": "famous",
+          "options": [
+            "fam + ous",
+            "fame + ous",
+            "fa + mous",
+            "famous"
+          ],
+          "answer": "fam + ous"
+        },
+        {
+          "type": "split",
+          "prompt": "amazing = ___ + ___ (drop e from amaze)",
+          "word": "amazing",
+          "options": [
+            "amaz + ing",
+            "amaze + ing",
+            "a + mazing",
+            "amazing"
+          ],
+          "answer": "amaz + ing"
+        }
+      ],
+      "tip": "拆错常常是忘了“去 e”，或者把 -ful 当成了词根。"
+    },
+    {
+      "id": 2,
+      "title": "词尾帽子",
+      "principle": "词缀构词",
+      "goal": "看词尾，就知道这个词是干什么的",
+      "passScore": 8,
+      "coach": "词尾像一顶帽子。帽子告诉你这个词的工作。",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "usually 这顶帽子是干什么的？",
+          "word": "usually",
+          "zh": "通常；一般地",
+          "options": [
+            "adverb｜副词（怎样地）",
+            "adjective｜形容词（什么样）",
+            "noun｜名词（一件事）",
+            "verb｜动词（做什么）"
+          ],
+          "answer": "adverb｜副词（怎样地）",
+          "explain": "-ly 是副词帽子，表示“怎样地”。usually 是“通常地”。"
+        },
+        {
+          "type": "choice",
+          "prompt": "helpful 这顶帽子是干什么的？",
+          "word": "helpful",
+          "zh": "有帮助的",
+          "options": [
+            "adjective｜形容词（什么样）",
+            "adverb｜副词（怎样地）",
+            "noun｜名词（一件事）",
+            "verb｜动词（做什么）"
+          ],
+          "answer": "adjective｜形容词（什么样）",
+          "explain": "-ful 是形容词帽子，表示“什么样”。helpful 是“有帮助的”。"
+        },
+        {
+          "type": "choice",
+          "prompt": "recyclable 这顶帽子是干什么的？",
+          "word": "recyclable",
+          "zh": "可回收利用的",
+          "options": [
+            "adjective｜形容词（什么样）",
+            "adverb｜副词（怎样地）",
+            "noun｜名词（一件事）",
+            "verb｜动词（做什么）"
+          ],
+          "answer": "adjective｜形容词（什么样）",
+          "explain": "-able 是形容词帽子，表示“能……的、什么样的”。recyclable 是“可回收利用的”。"
+        },
+        {
+          "type": "choice",
+          "prompt": "tradition 这顶帽子是干什么的？",
+          "word": "tradition",
+          "zh": "传统",
+          "options": [
+            "noun｜名词（一件事）",
+            "adjective｜形容词（什么样）",
+            "adverb｜副词（怎样地）",
+            "verb｜动词（做什么）"
+          ],
+          "answer": "noun｜名词（一件事）",
+          "explain": "-tion 是名词帽子，表示一件事或一个名字。tradition 是“传统”。"
+        },
+        {
+          "type": "choice",
+          "prompt": "really 这顶帽子是干什么的？",
+          "word": "really",
+          "zh": "确实，真正地",
+          "options": [
+            "adverb｜副词（怎样地）",
+            "adjective｜形容词（什么样）",
+            "noun｜名词（一件事）",
+            "verb｜动词（做什么）"
+          ],
+          "answer": "adverb｜副词（怎样地）",
+          "explain": "-ly 是副词帽子，表示“怎样地”。really 是“真正地”。"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "The volunteers are very _____ (help) to us.",
+          "word": "helpful",
+          "zh": "志愿者对我们非常_____（帮助）。",
+          "options": [
+            "helpful｜有帮助的",
+            "helpfully｜有帮助地",
+            "helpless｜无助的",
+            "helping｜正在帮助"
+          ],
+          "answer": "helpful｜有帮助的",
+          "explain": "very 后面要说“什么样”，戴形容词帽子 -ful。helpful 是“有帮助的”。"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "Plastic bags are _____ (harm) to the earth.",
+          "word": "harmful",
+          "zh": "塑料袋对地球是_____的（伤害）。",
+          "options": [
+            "harmful｜有害的",
+            "harmless｜无害的",
+            "harm｜伤害",
+            "harming｜正在伤害"
+          ],
+          "answer": "harmful｜有害的",
+          "explain": "这里要说塑料袋“是什么样的”，戴 -ful。harmful 是“有害的”，不是“无害的”。"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "We _____ (usual) go to school by bike.",
+          "word": "usually",
+          "zh": "我们_____骑自行车去上学（通常）。",
+          "options": [
+            "usually｜通常地",
+            "usual｜通常的",
+            "unusual｜不寻常的",
+            "use｜使用"
+          ],
+          "answer": "usually｜通常地",
+          "explain": "这里要说“怎样去”，戴副词帽子 -ly。usually 是“通常地”。"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "This is a _____ (tradition) festival in China.",
+          "word": "traditional",
+          "zh": "这是中国的一个_____节日（传统）。",
+          "options": [
+            "traditional｜传统的",
+            "tradition｜传统",
+            "traditionally｜传统地",
+            "traditions｜许多传统"
+          ],
+          "answer": "traditional｜传统的",
+          "explain": "festival 前面要说“什么样的节日”，戴 -al。traditional 是“传统的”。"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "The Olympics are very _____ (excite).",
+          "word": "exciting",
+          "zh": "奥运会非常_____（兴奋）。",
+          "options": [
+            "exciting｜令人兴奋的",
+            "excited｜感到兴奋的",
+            "excite｜使兴奋",
+            "excitement｜兴奋"
+          ],
+          "answer": "exciting｜令人兴奋的",
+          "explain": "奥运会是事物，very 后面用 -ing，表示“令人……的”。exciting 是“令人兴奋的”。"
+        }
+      ],
+      "tip": "要说“什么样”？用形容词帽子。要说“怎样地”？用 -ly 副词帽子。"
+    },
+    {
+      "id": 3,
+      "title": "合成词和短语",
+      "principle": "组块 + 双重编码",
+      "goal": "用小词拼出大词",
+      "passScore": 8,
+      "coach": "有些词是两个小词粘在一起。短语也是意思积木。",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "home + town = ?",
+          "word": "hometown",
+          "options": [
+            "hometown",
+            "hometow",
+            "home town",
+            "homtown"
+          ],
+          "answer": "hometown",
+          "zh": "家乡"
+        },
+        {
+          "type": "choice",
+          "prompt": "news + paper = ?",
+          "word": "newspaper",
+          "options": [
+            "newspaper",
+            "newpaper",
+            "news paper",
+            "newspapers"
+          ],
+          "answer": "newspaper",
+          "zh": "报纸"
+        },
+        {
+          "type": "choice",
+          "prompt": "some + thing = ?",
+          "word": "something",
+          "options": [
+            "something",
+            "somthing",
+            "some thing",
+            "anything"
+          ],
+          "answer": "something",
+          "zh": "某物、某事"
+        },
+        {
+          "type": "choice",
+          "prompt": "e (electronic) + mail = ?",
+          "word": "email",
+          "options": [
+            "email",
+            "mail",
+            "e-mail",
+            "emmial"
+          ],
+          "answer": "email",
+          "zh": "电子邮件"
+        },
+        {
+          "type": "choice",
+          "prompt": "our + selves = ?",
+          "word": "ourselves",
+          "options": [
+            "ourselves",
+            "ourself",
+            "ourselve",
+            "our self"
+          ],
+          "answer": "ourselves",
+          "zh": "我们自己"
+        },
+        {
+          "type": "choice",
+          "prompt": "my + self = ?",
+          "word": "myself",
+          "options": [
+            "myself",
+            "myselves",
+            "my self",
+            "meself"
+          ],
+          "answer": "myself",
+          "zh": "我自己"
+        },
+        {
+          "type": "choice",
+          "prompt": "Mid + Autumn + Festival = ?",
+          "word": "Mid-Autumn Festival",
+          "options": [
+            "中秋节",
+            "重阳节",
+            "清明节",
+            "春节"
+          ],
+          "answer": "中秋节"
+        },
+        {
+          "type": "choice",
+          "prompt": "Double + Ninth + Festival = ?",
+          "word": "Double Ninth Festival",
+          "options": [
+            "重阳节",
+            "中秋节",
+            "清明节",
+            "端午节"
+          ],
+          "answer": "重阳节"
+        },
+        {
+          "type": "choice",
+          "prompt": "high + speed + train = ?",
+          "word": "high-speed train",
+          "options": [
+            "高铁",
+            "地铁",
+            "火车",
+            "飞机"
+          ],
+          "answer": "高铁"
+        },
+        {
+          "type": "choice",
+          "prompt": "Tomb + sweeping + Day = ?",
+          "word": "Tomb-sweeping Day",
+          "options": [
+            "清明节",
+            "中秋节",
+            "重阳节",
+            "劳动节"
+          ],
+          "answer": "清明节"
+        }
+      ],
+      "tip": "合成词写错时，看哪个小词丢了字母。例如 some + thing，不是 somthing。"
+    },
+    {
+      "id": 4,
+      "title": "词族",
+      "principle": "同族一起记",
+      "goal": "抓住词根，记住整族词",
+      "passScore": 10,
+      "coach": "同一个词根长出来的词是一家。放在一起学。",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "export (ex + port) means?",
+          "word": "export",
+          "options": [
+            "出口",
+            "进口",
+            "报告",
+            "运输"
+          ],
+          "answer": "出口"
+        },
+        {
+          "type": "choice",
+          "prompt": "import (im + port) means?",
+          "word": "import",
+          "options": [
+            "进口",
+            "出口",
+            "报告",
+            "运输"
+          ],
+          "answer": "进口"
+        },
+        {
+          "type": "choice",
+          "prompt": "report (re + port) means?",
+          "word": "report",
+          "options": [
+            "报告",
+            "出口",
+            "进口",
+            "运输"
+          ],
+          "answer": "报告"
+        },
+        {
+          "type": "choice",
+          "prompt": "transport (trans + port) means?",
+          "word": "transport",
+          "options": [
+            "运输",
+            "出口",
+            "进口",
+            "报告"
+          ],
+          "answer": "运输"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "Many countries _____ tea from China. (export / import)",
+          "word": "import",
+          "options": [
+            "import",
+            "export"
+          ],
+          "answer": "import"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "Each group will give a _____ about their journey.",
+          "word": "report",
+          "options": [
+            "report",
+            "import",
+            "export",
+            "port"
+          ],
+          "answer": "report"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "A high-speed train can _____ many people quickly.",
+          "word": "transport",
+          "options": [
+            "transport",
+            "report",
+            "import",
+            "export"
+          ],
+          "answer": "transport"
+        },
+        {
+          "type": "choice",
+          "prompt": "fifteen → ?",
+          "word": "fifteenth",
+          "options": [
+            "fifteenth",
+            "fifteenty",
+            "fifteeneth",
+            "fiveteenth"
+          ],
+          "answer": "fifteenth"
+        },
+        {
+          "type": "choice",
+          "prompt": "eight → ? (only add h)",
+          "word": "eighth",
+          "options": [
+            "eighth",
+            "eightth",
+            "eigth",
+            "eights"
+          ],
+          "answer": "eighth"
+        },
+        {
+          "type": "choice",
+          "prompt": "nine → ? (drop e, add th)",
+          "word": "ninth",
+          "options": [
+            "ninth",
+            "nineth",
+            "ninethh",
+            "nine"
+          ],
+          "answer": "ninth"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "Mid-Autumn is on the _____ day of the _____ month (lunar).",
+          "word": "fifteenth",
+          "options": [
+            "fifteenth ; eighth",
+            "eighth ; fifteenth",
+            "ninth ; eighth",
+            "fifth ; eight"
+          ],
+          "answer": "fifteenth ; eighth"
+        }
+      ],
+      "tip": "序数词要小心：eighth 只加 h，ninth 要先去掉 e。"
+    },
+    {
+      "id": 5,
+      "title": "国家与人",
+      "principle": "规律迁移",
+      "goal": "从国名推出“哪国人 / 某国的”",
+      "passScore": 5,
+      "coach": "常常加 -ian / -an。有些是特例，要单独记。",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Canada → ?",
+          "word": "Canadian",
+          "options": [
+            "Canadian",
+            "Canadan",
+            "Canadaian",
+            "Canadien"
+          ],
+          "answer": "Canadian"
+        },
+        {
+          "type": "choice",
+          "prompt": "India → ?",
+          "word": "Indian",
+          "options": [
+            "Indian",
+            "Indianan",
+            "Indish",
+            "Indie"
+          ],
+          "answer": "Indian"
+        },
+        {
+          "type": "choice",
+          "prompt": "Italy → ? (drop y)",
+          "word": "Italian",
+          "options": [
+            "Italian",
+            "Italyian",
+            "Italish",
+            "Italie"
+          ],
+          "answer": "Italian"
+        },
+        {
+          "type": "choice",
+          "prompt": "Australia → ?",
+          "word": "Australian",
+          "options": [
+            "Australian",
+            "Australan",
+            "Australish",
+            "Aussie"
+          ],
+          "answer": "Australian"
+        },
+        {
+          "type": "choice",
+          "prompt": "France → ? (special!)",
+          "word": "French",
+          "options": [
+            "French",
+            "Francian",
+            "Francan",
+            "Francean"
+          ],
+          "answer": "French"
+        },
+        {
+          "type": "choice",
+          "prompt": "the UK → ? (special!)",
+          "word": "British",
+          "options": [
+            "British",
+            "Englandian",
+            "UKan",
+            "Britanian"
+          ],
+          "answer": "British"
+        }
+      ],
+      "tip": "这本书里有 Canadian、British、French。China → Chinese 也是特例。"
+    },
+    {
+      "id": 6,
+      "title": "形近词侦探",
+      "principle": "形近对比",
+      "goal": "找出不一样的那一块，以后不再混",
+      "passScore": 7,
+      "coach": "长得像的词会骗你。先看是哪一对，再找那一块不同的地方。",
+      "questions": [
+        {
+          "type": "fill_choice",
+          "prompt": "The library is very _____. (quiet / quite)",
+          "word": "quiet",
+          "options": [
+            "quiet",
+            "quite"
+          ],
+          "answer": "quiet"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "It is _____ cold today. (quiet / quite)",
+          "word": "quite",
+          "options": [
+            "quite",
+            "quiet"
+          ],
+          "answer": "quite"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "Plastic bags are _____ to the earth. (helpful / harmful)",
+          "word": "harmful",
+          "options": [
+            "harmful",
+            "helpful"
+          ],
+          "answer": "harmful"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "The volunteers are very _____ to us. (helpful / harmful)",
+          "word": "helpful",
+          "options": [
+            "helpful",
+            "harmful"
+          ],
+          "answer": "helpful"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "_____ hometown is famous for tea. (Their / There)",
+          "word": "their",
+          "options": [
+            "Their",
+            "There"
+          ],
+          "answer": "Their"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "_____ is a clock on the tower. (Their / There)",
+          "word": "there",
+          "options": [
+            "There",
+            "Their"
+          ],
+          "answer": "There"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "The train ride takes only one _____. (hour / our)",
+          "word": "hour",
+          "options": [
+            "hour",
+            "our"
+          ],
+          "answer": "hour"
+        },
+        {
+          "type": "fill_choice",
+          "prompt": "Let’s clean _____ classroom. (hour / our)",
+          "word": "our",
+          "options": [
+            "our",
+            "hour"
+          ],
+          "answer": "our"
+        }
+      ],
+      "tip": "先问是哪一组易混词，再找不同的积木：字母、词根，或同音不同形。"
+    },
+    {
+      "id": 7,
+      "title": "一词多义",
+      "principle": "先记核心义",
+      "goal": "从核心意思读出句子里的意思",
+      "passScore": 7,
+      "coach": "不要一次背下所有意思。先学核心，再慢慢长出来。",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "Can you take us to the hill? → take means?",
+          "word": "take",
+          "options": [
+            "带领",
+            "拿"
+          ],
+          "answer": "带领"
+        },
+        {
+          "type": "choice",
+          "prompt": "We pick vegetables in the morning. → pick means?",
+          "word": "pick",
+          "options": [
+            "摘",
+            "选择"
+          ],
+          "answer": "摘"
+        },
+        {
+          "type": "choice",
+          "prompt": "You can pick one of the two choices. → pick means?",
+          "word": "pick",
+          "options": [
+            "选择",
+            "摘"
+          ],
+          "answer": "选择"
+        },
+        {
+          "type": "choice",
+          "prompt": "The view from the tower is amazing. → view means?",
+          "word": "view",
+          "options": [
+            "景色",
+            "观点"
+          ],
+          "answer": "景色"
+        },
+        {
+          "type": "choice",
+          "prompt": "In my view, trains are more convenient. → view means?",
+          "word": "view",
+          "options": [
+            "观点",
+            "景色"
+          ],
+          "answer": "观点"
+        },
+        {
+          "type": "choice",
+          "prompt": "What sort of music do you like? → sort means?",
+          "word": "sort",
+          "options": [
+            "种类",
+            "分类"
+          ],
+          "answer": "种类"
+        },
+        {
+          "type": "choice",
+          "prompt": "Please sort the rubbish. → sort means?",
+          "word": "sort",
+          "options": [
+            "分类",
+            "种类"
+          ],
+          "answer": "分类"
+        },
+        {
+          "type": "choice",
+          "prompt": "Maths is my favourite subject. → subject means?",
+          "word": "subject",
+          "options": [
+            "学科",
+            "主题"
+          ],
+          "answer": "学科"
+        },
+        {
+          "type": "choice",
+          "prompt": "She asked me to her birthday party. → ask means?",
+          "word": "ask",
+          "options": [
+            "邀请",
+            "询问"
+          ],
+          "answer": "邀请"
+        }
+      ],
+      "tip": "先看句子里是名词还是动词，再回到核心意思。"
+    },
+    {
+      "id": 8,
+      "title": "盖住再想",
+      "principle": "提取练习",
+      "goal": "合上书，自己想出来",
+      "passScore": 10,
+      "coach": "先看两分钟，说出音节积木。然后盖住中文再答。",
+      "questions": [
+        {
+          "type": "zh_to_en",
+          "prompt": "旅程",
+          "word": "journey",
+          "options": [
+            "journey",
+            "trip",
+            "travel",
+            "camp"
+          ],
+          "answer": "journey"
+        },
+        {
+          "type": "zh_to_en",
+          "prompt": "古老的",
+          "word": "ancient",
+          "options": [
+            "ancient",
+            "old",
+            "elder",
+            "traditional"
+          ],
+          "answer": "ancient"
+        },
+        {
+          "type": "zh_to_en",
+          "prompt": "首都",
+          "word": "capital",
+          "options": [
+            "capital",
+            "city",
+            "country",
+            "culture"
+          ],
+          "answer": "capital"
+        },
+        {
+          "type": "zh_to_en",
+          "prompt": "志愿者",
+          "word": "volunteer",
+          "options": [
+            "volunteer",
+            "service",
+            "poster",
+            "public"
+          ],
+          "answer": "volunteer"
+        },
+        {
+          "type": "zh_to_en",
+          "prompt": "垃圾",
+          "word": "rubbish",
+          "options": [
+            "rubbish",
+            "waste",
+            "bag",
+            "sort"
+          ],
+          "answer": "rubbish"
+        },
+        {
+          "type": "zh_to_en",
+          "prompt": "奖牌",
+          "word": "medal",
+          "options": [
+            "medal",
+            "Olympics",
+            "team",
+            "ball"
+          ],
+          "answer": "medal"
+        },
+        {
+          "type": "ipa_to_en",
+          "prompt": "/ˈkwaɪət/",
+          "word": "quiet",
+          "options": [
+            "quiet",
+            "quite",
+            "quick",
+            "quit"
+          ],
+          "answer": "quiet",
+          "zh": "安静的"
+        },
+        {
+          "type": "ipa_to_en",
+          "prompt": "/ˈdɪfɪkəlt/",
+          "word": "difficult",
+          "options": [
+            "difficult",
+            "different",
+            "delicious",
+            "direct"
+          ],
+          "answer": "difficult",
+          "zh": "困难的"
+        },
+        {
+          "type": "ipa_to_en",
+          "prompt": "/dɪˈlɪʃəs/",
+          "word": "delicious",
+          "options": [
+            "delicious",
+            "difficult",
+            "decide",
+            "delight"
+          ],
+          "answer": "delicious",
+          "zh": "美味的"
+        },
+        {
+          "type": "ipa_to_en",
+          "prompt": "/kənˈviːniənt/",
+          "word": "convenient",
+          "options": [
+            "convenient",
+            "conversation",
+            "continent",
+            "culture"
+          ],
+          "answer": "convenient",
+          "zh": "方便的"
+        },
+        {
+          "type": "ipa_to_en",
+          "prompt": "/ˈhɑːrvɪst/",
+          "word": "harvest",
+          "options": [
+            "harvest",
+            "heavy",
+            "history",
+            "helpful"
+          ],
+          "answer": "harvest",
+          "zh": "收获"
+        },
+        {
+          "type": "ipa_to_en",
+          "prompt": "/ˈpoʊstər/",
+          "word": "poster",
+          "options": [
+            "poster",
+            "post",
+            "porter",
+            "popular"
+          ],
+          "answer": "poster",
+          "zh": "海报"
+        }
+      ],
+      "tip": "卡住时，先按音节写，再检查难写的词尾，比如 -cient、-ous、-nient。"
+    },
+    {
+      "id": 9,
+      "title": "毕业挑战",
+      "principle": "迁移 + 复习",
+      "goal": "用上每一种本事，连生词也能猜",
+      "passScore": 6,
+      "coach": "最后一关。有些词是新的，但你可以拆开它们。",
+      "questions": [
+        {
+          "type": "choice",
+          "prompt": "careful = care + ful → ?",
+          "word": "careful",
+          "options": [
+            "小心的",
+            "粗心的",
+            "关心",
+            "照顾"
+          ],
+          "answer": "小心的"
+        },
+        {
+          "type": "choice",
+          "prompt": "harmless = harm + less (less = without) → ?",
+          "word": "harmless",
+          "options": [
+            "无害的",
+            "有害的",
+            "有帮助的",
+            "危险的"
+          ],
+          "answer": "无害的"
+        },
+        {
+          "type": "choice",
+          "prompt": "reuse = re + use → ?",
+          "word": "reuse",
+          "options": [
+            "重复使用",
+            "使用",
+            "不用",
+            "滥用"
+          ],
+          "answer": "重复使用"
+        },
+        {
+          "type": "choice",
+          "prompt": "unusual = un + usual → ?",
+          "word": "unusual",
+          "options": [
+            "不寻常的",
+            "通常的",
+            "有用的",
+            "无用的"
+          ],
+          "answer": "不寻常的"
+        },
+        {
+          "type": "choice",
+          "prompt": "quickly = quick + ly → ?",
+          "word": "quickly",
+          "options": [
+            "快速地",
+            "快速的",
+            "慢地",
+            "安静地"
+          ],
+          "answer": "快速地"
+        },
+        {
+          "type": "choice",
+          "prompt": "Fix: Plastic bags are helpful to the earth. →",
+          "word": "harmful",
+          "options": [
+            "harmful",
+            "helpful",
+            "helpless",
+            "harmless"
+          ],
+          "answer": "harmful"
+        },
+        {
+          "type": "choice",
+          "prompt": "Fix: We usual go to school by bike. →",
+          "word": "usually",
+          "options": [
+            "usually",
+            "usual",
+            "unusual",
+            "use"
+          ],
+          "answer": "usually"
+        },
+        {
+          "type": "choice",
+          "prompt": "The game is very _____. (exciting / excited)",
+          "word": "exciting",
+          "options": [
+            "exciting",
+            "excited"
+          ],
+          "answer": "exciting"
+        }
+      ],
+      "tip": "这里拿到及格分，说明你能看见结构，也能猜出意思。"
+    }
+  ]
+}

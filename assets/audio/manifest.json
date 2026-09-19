@@ -1,0 +1,750 @@
+{
+  "locale": "en-US",
+  "voice": "en-US-AriaNeural",
+  "rate": "-10%",
+  "version": 1,
+  "assetBase": "assets/audio",
+  "remoteBaseUrl": null,
+  "clips": {
+    "africa": {
+      "text": "Africa",
+      "file": "en-us/africa.mp3"
+    },
+    "age": {
+      "text": "age",
+      "file": "en-us/age.mp3"
+    },
+    "all": {
+      "text": "all",
+      "file": "en-us/all.mp3"
+    },
+    "amazing": {
+      "text": "amazing",
+      "file": "en-us/amazing.mp3"
+    },
+    "ancient": {
+      "text": "ancient",
+      "file": "en-us/ancient.mp3"
+    },
+    "antarctica": {
+      "text": "Antarctica",
+      "file": "en-us/antarctica.mp3"
+    },
+    "any": {
+      "text": "any",
+      "file": "en-us/any.mp3"
+    },
+    "asia": {
+      "text": "Asia",
+      "file": "en-us/asia.mp3"
+    },
+    "ask": {
+      "text": "ask",
+      "file": "en-us/ask.mp3"
+    },
+    "australia": {
+      "text": "Australia",
+      "file": "en-us/australia.mp3"
+    },
+    "australian": {
+      "text": "Australian",
+      "file": "en-us/australian.mp3"
+    },
+    "badminton": {
+      "text": "badminton",
+      "file": "en-us/badminton.mp3"
+    },
+    "bag": {
+      "text": "bag",
+      "file": "en-us/bag.mp3"
+    },
+    "ball": {
+      "text": "ball",
+      "file": "en-us/ball.mp3"
+    },
+    "bank": {
+      "text": "bank",
+      "file": "en-us/bank.mp3"
+    },
+    "before": {
+      "text": "before",
+      "file": "en-us/before.mp3"
+    },
+    "big_ben": {
+      "text": "Big Ben",
+      "file": "en-us/big_ben.mp3"
+    },
+    "bike": {
+      "text": "bike",
+      "file": "en-us/bike.mp3"
+    },
+    "british": {
+      "text": "British",
+      "file": "en-us/british.mp3"
+    },
+    "busy": {
+      "text": "busy",
+      "file": "en-us/busy.mp3"
+    },
+    "by": {
+      "text": "by",
+      "file": "en-us/by.mp3"
+    },
+    "cake": {
+      "text": "cake",
+      "file": "en-us/cake.mp3"
+    },
+    "calligraphy": {
+      "text": "calligraphy",
+      "file": "en-us/calligraphy.mp3"
+    },
+    "camp": {
+      "text": "camp",
+      "file": "en-us/camp.mp3"
+    },
+    "canadian": {
+      "text": "Canadian",
+      "file": "en-us/canadian.mp3"
+    },
+    "capital": {
+      "text": "capital",
+      "file": "en-us/capital.mp3"
+    },
+    "car": {
+      "text": "car",
+      "file": "en-us/car.mp3"
+    },
+    "care": {
+      "text": "care",
+      "file": "en-us/care.mp3"
+    },
+    "careful": {
+      "text": "careful",
+      "file": "en-us/careful.mp3"
+    },
+    "character": {
+      "text": "character",
+      "file": "en-us/character.mp3"
+    },
+    "china": {
+      "text": "China",
+      "file": "en-us/china.mp3"
+    },
+    "choice": {
+      "text": "choice",
+      "file": "en-us/choice.mp3"
+    },
+    "city": {
+      "text": "city",
+      "file": "en-us/city.mp3"
+    },
+    "clock": {
+      "text": "clock",
+      "file": "en-us/clock.mp3"
+    },
+    "convenient": {
+      "text": "convenient",
+      "file": "en-us/convenient.mp3"
+    },
+    "country": {
+      "text": "country",
+      "file": "en-us/country.mp3"
+    },
+    "crop": {
+      "text": "crop",
+      "file": "en-us/crop.mp3"
+    },
+    "culture": {
+      "text": "culture",
+      "file": "en-us/culture.mp3"
+    },
+    "delicious": {
+      "text": "delicious",
+      "file": "en-us/delicious.mp3"
+    },
+    "difficult": {
+      "text": "difficult",
+      "file": "en-us/difficult.mp3"
+    },
+    "double": {
+      "text": "double",
+      "file": "en-us/double.mp3"
+    },
+    "double_ninth_festival": {
+      "text": "Double Ninth Festival",
+      "file": "en-us/double_ninth_festival.mp3"
+    },
+    "east": {
+      "text": "east",
+      "file": "en-us/east.mp3"
+    },
+    "eighth": {
+      "text": "eighth",
+      "file": "en-us/eighth.mp3"
+    },
+    "elder": {
+      "text": "elder",
+      "file": "en-us/elder.mp3"
+    },
+    "email": {
+      "text": "email",
+      "file": "en-us/email.mp3"
+    },
+    "europe": {
+      "text": "Europe",
+      "file": "en-us/europe.mp3"
+    },
+    "every": {
+      "text": "every",
+      "file": "en-us/every.mp3"
+    },
+    "exciting": {
+      "text": "exciting",
+      "file": "en-us/exciting.mp3"
+    },
+    "export": {
+      "text": "export",
+      "file": "en-us/export.mp3"
+    },
+    "famous": {
+      "text": "famous",
+      "file": "en-us/famous.mp3"
+    },
+    "few": {
+      "text": "few",
+      "file": "en-us/few.mp3"
+    },
+    "fifteenth": {
+      "text": "fifteenth",
+      "file": "en-us/fifteenth.mp3"
+    },
+    "france": {
+      "text": "France",
+      "file": "en-us/france.mp3"
+    },
+    "french": {
+      "text": "French",
+      "file": "en-us/french.mp3"
+    },
+    "gondola": {
+      "text": "gondola",
+      "file": "en-us/gondola.mp3"
+    },
+    "grow": {
+      "text": "grow",
+      "file": "en-us/grow.mp3"
+    },
+    "harmful": {
+      "text": "harmful",
+      "file": "en-us/harmful.mp3"
+    },
+    "harmless": {
+      "text": "harmless",
+      "file": "en-us/harmless.mp3"
+    },
+    "harvest": {
+      "text": "harvest",
+      "file": "en-us/harvest.mp3"
+    },
+    "heavy": {
+      "text": "heavy",
+      "file": "en-us/heavy.mp3"
+    },
+    "helpful": {
+      "text": "helpful",
+      "file": "en-us/helpful.mp3"
+    },
+    "here": {
+      "text": "here",
+      "file": "en-us/here.mp3"
+    },
+    "high_speed_train": {
+      "text": "high-speed train",
+      "file": "en-us/high_speed_train.mp3"
+    },
+    "hill": {
+      "text": "hill",
+      "file": "en-us/hill.mp3"
+    },
+    "history": {
+      "text": "history",
+      "file": "en-us/history.mp3"
+    },
+    "hit": {
+      "text": "hit",
+      "file": "en-us/hit.mp3"
+    },
+    "hometown": {
+      "text": "hometown",
+      "file": "en-us/hometown.mp3"
+    },
+    "hour": {
+      "text": "hour",
+      "file": "en-us/hour.mp3"
+    },
+    "ice_hockey": {
+      "text": "ice hockey",
+      "file": "en-us/ice_hockey.mp3"
+    },
+    "import": {
+      "text": "import",
+      "file": "en-us/import.mp3"
+    },
+    "important": {
+      "text": "important",
+      "file": "en-us/important.mp3"
+    },
+    "india": {
+      "text": "India",
+      "file": "en-us/india.mp3"
+    },
+    "indian": {
+      "text": "Indian",
+      "file": "en-us/indian.mp3"
+    },
+    "italian": {
+      "text": "Italian",
+      "file": "en-us/italian.mp3"
+    },
+    "italy": {
+      "text": "Italy",
+      "file": "en-us/italy.mp3"
+    },
+    "journey": {
+      "text": "journey",
+      "file": "en-us/journey.mp3"
+    },
+    "keep": {
+      "text": "keep",
+      "file": "en-us/keep.mp3"
+    },
+    "leave": {
+      "text": "leave",
+      "file": "en-us/leave.mp3"
+    },
+    "lesson": {
+      "text": "lesson",
+      "file": "en-us/lesson.mp3"
+    },
+    "life": {
+      "text": "life",
+      "file": "en-us/life.mp3"
+    },
+    "london": {
+      "text": "London",
+      "file": "en-us/london.mp3"
+    },
+    "lunar_calendar": {
+      "text": "lunar calendar",
+      "file": "en-us/lunar_calendar.mp3"
+    },
+    "map": {
+      "text": "map",
+      "file": "en-us/map.mp3"
+    },
+    "maths": {
+      "text": "maths",
+      "file": "en-us/maths.mp3"
+    },
+    "medal": {
+      "text": "medal",
+      "file": "en-us/medal.mp3"
+    },
+    "mid_autumn_festival": {
+      "text": "Mid-Autumn Festival",
+      "file": "en-us/mid_autumn_festival.mp3"
+    },
+    "middle": {
+      "text": "middle",
+      "file": "en-us/middle.mp3"
+    },
+    "miss": {
+      "text": "miss",
+      "file": "en-us/miss.mp3"
+    },
+    "month": {
+      "text": "month",
+      "file": "en-us/month.mp3"
+    },
+    "moon": {
+      "text": "moon",
+      "file": "en-us/moon.mp3"
+    },
+    "more_than": {
+      "text": "more than",
+      "file": "en-us/more_than.mp3"
+    },
+    "most": {
+      "text": "most",
+      "file": "en-us/most.mp3"
+    },
+    "much": {
+      "text": "much",
+      "file": "en-us/much.mp3"
+    },
+    "music": {
+      "text": "music",
+      "file": "en-us/music.mp3"
+    },
+    "myself": {
+      "text": "myself",
+      "file": "en-us/myself.mp3"
+    },
+    "never": {
+      "text": "never",
+      "file": "en-us/never.mp3"
+    },
+    "new_delhi": {
+      "text": "New Delhi",
+      "file": "en-us/new_delhi.mp3"
+    },
+    "new_york": {
+      "text": "New York",
+      "file": "en-us/new_york.mp3"
+    },
+    "newspaper": {
+      "text": "newspaper",
+      "file": "en-us/newspaper.mp3"
+    },
+    "ninth": {
+      "text": "ninth",
+      "file": "en-us/ninth.mp3"
+    },
+    "north": {
+      "text": "north",
+      "file": "en-us/north.mp3"
+    },
+    "north_america": {
+      "text": "North America",
+      "file": "en-us/north_america.mp3"
+    },
+    "oceania": {
+      "text": "Oceania",
+      "file": "en-us/oceania.mp3"
+    },
+    "olympics": {
+      "text": "Olympics",
+      "file": "en-us/olympics.mp3"
+    },
+    "only": {
+      "text": "only",
+      "file": "en-us/only.mp3"
+    },
+    "other": {
+      "text": "other",
+      "file": "en-us/other.mp3"
+    },
+    "our": {
+      "text": "our",
+      "file": "en-us/our.mp3"
+    },
+    "ourselves": {
+      "text": "ourselves",
+      "file": "en-us/ourselves.mp3"
+    },
+    "over": {
+      "text": "over",
+      "file": "en-us/over.mp3"
+    },
+    "p_m": {
+      "text": "p.m.",
+      "file": "en-us/p_m.mp3"
+    },
+    "paris": {
+      "text": "Paris",
+      "file": "en-us/paris.mp3"
+    },
+    "pe": {
+      "text": "PE",
+      "file": "en-us/pe.mp3"
+    },
+    "pick": {
+      "text": "pick",
+      "file": "en-us/pick.mp3"
+    },
+    "place": {
+      "text": "place",
+      "file": "en-us/place.mp3"
+    },
+    "plan": {
+      "text": "plan",
+      "file": "en-us/plan.mp3"
+    },
+    "popular": {
+      "text": "popular",
+      "file": "en-us/popular.mp3"
+    },
+    "poster": {
+      "text": "poster",
+      "file": "en-us/poster.mp3"
+    },
+    "practice": {
+      "text": "practice",
+      "file": "en-us/practice.mp3"
+    },
+    "public": {
+      "text": "public",
+      "file": "en-us/public.mp3"
+    },
+    "question": {
+      "text": "question",
+      "file": "en-us/question.mp3"
+    },
+    "quickly": {
+      "text": "quickly",
+      "file": "en-us/quickly.mp3"
+    },
+    "quiet": {
+      "text": "quiet",
+      "file": "en-us/quiet.mp3"
+    },
+    "quite": {
+      "text": "quite",
+      "file": "en-us/quite.mp3"
+    },
+    "really": {
+      "text": "really",
+      "file": "en-us/really.mp3"
+    },
+    "recyclable": {
+      "text": "recyclable",
+      "file": "en-us/recyclable.mp3"
+    },
+    "report": {
+      "text": "report",
+      "file": "en-us/report.mp3"
+    },
+    "reuse": {
+      "text": "reuse",
+      "file": "en-us/reuse.mp3"
+    },
+    "ride": {
+      "text": "ride",
+      "file": "en-us/ride.mp3"
+    },
+    "river_thames": {
+      "text": "River Thames",
+      "file": "en-us/river_thames.mp3"
+    },
+    "roll": {
+      "text": "roll",
+      "file": "en-us/roll.mp3"
+    },
+    "rome": {
+      "text": "Rome",
+      "file": "en-us/rome.mp3"
+    },
+    "rubbish": {
+      "text": "rubbish",
+      "file": "en-us/rubbish.mp3"
+    },
+    "rugby": {
+      "text": "rugby",
+      "file": "en-us/rugby.mp3"
+    },
+    "say": {
+      "text": "say",
+      "file": "en-us/say.mp3"
+    },
+    "service": {
+      "text": "service",
+      "file": "en-us/service.mp3"
+    },
+    "set": {
+      "text": "set",
+      "file": "en-us/set.mp3"
+    },
+    "single": {
+      "text": "single",
+      "file": "en-us/single.mp3"
+    },
+    "skiing": {
+      "text": "skiing",
+      "file": "en-us/skiing.mp3"
+    },
+    "slow": {
+      "text": "slow",
+      "file": "en-us/slow.mp3"
+    },
+    "solar_term": {
+      "text": "solar term",
+      "file": "en-us/solar_term.mp3"
+    },
+    "some": {
+      "text": "some",
+      "file": "en-us/some.mp3"
+    },
+    "something": {
+      "text": "something",
+      "file": "en-us/something.mp3"
+    },
+    "sort": {
+      "text": "sort",
+      "file": "en-us/sort.mp3"
+    },
+    "south": {
+      "text": "south",
+      "file": "en-us/south.mp3"
+    },
+    "speak": {
+      "text": "speak",
+      "file": "en-us/speak.mp3"
+    },
+    "stay": {
+      "text": "stay",
+      "file": "en-us/stay.mp3"
+    },
+    "store_up": {
+      "text": "store up",
+      "file": "en-us/store_up.mp3"
+    },
+    "subject": {
+      "text": "subject",
+      "file": "en-us/subject.mp3"
+    },
+    "sure": {
+      "text": "sure",
+      "file": "en-us/sure.mp3"
+    },
+    "taj_mahal": {
+      "text": "Taj Mahal",
+      "file": "en-us/taj_mahal.mp3"
+    },
+    "take": {
+      "text": "take",
+      "file": "en-us/take.mp3"
+    },
+    "take_out": {
+      "text": "take out",
+      "file": "en-us/take_out.mp3"
+    },
+    "taxi": {
+      "text": "taxi",
+      "file": "en-us/taxi.mp3"
+    },
+    "team": {
+      "text": "team",
+      "file": "en-us/team.mp3"
+    },
+    "tennis": {
+      "text": "tennis",
+      "file": "en-us/tennis.mp3"
+    },
+    "the_uk": {
+      "text": "the UK",
+      "file": "en-us/the_uk.mp3"
+    },
+    "their": {
+      "text": "their",
+      "file": "en-us/their.mp3"
+    },
+    "there": {
+      "text": "there",
+      "file": "en-us/there.mp3"
+    },
+    "thing": {
+      "text": "thing",
+      "file": "en-us/thing.mp3"
+    },
+    "tomb_sweeping_day": {
+      "text": "Tomb-sweeping Day",
+      "file": "en-us/tomb_sweeping_day.mp3"
+    },
+    "top": {
+      "text": "top",
+      "file": "en-us/top.mp3"
+    },
+    "tower": {
+      "text": "tower",
+      "file": "en-us/tower.mp3"
+    },
+    "tradition": {
+      "text": "tradition",
+      "file": "en-us/tradition.mp3"
+    },
+    "traditional": {
+      "text": "traditional",
+      "file": "en-us/traditional.mp3"
+    },
+    "train": {
+      "text": "train",
+      "file": "en-us/train.mp3"
+    },
+    "transport": {
+      "text": "transport",
+      "file": "en-us/transport.mp3"
+    },
+    "trip": {
+      "text": "trip",
+      "file": "en-us/trip.mp3"
+    },
+    "unusual": {
+      "text": "unusual",
+      "file": "en-us/unusual.mp3"
+    },
+    "us": {
+      "text": "us",
+      "file": "en-us/us.mp3"
+    },
+    "usually": {
+      "text": "usually",
+      "file": "en-us/usually.mp3"
+    },
+    "vegetable": {
+      "text": "vegetable",
+      "file": "en-us/vegetable.mp3"
+    },
+    "venice": {
+      "text": "Venice",
+      "file": "en-us/venice.mp3"
+    },
+    "view": {
+      "text": "view",
+      "file": "en-us/view.mp3"
+    },
+    "volunteer": {
+      "text": "volunteer",
+      "file": "en-us/volunteer.mp3"
+    },
+    "wall": {
+      "text": "wall",
+      "file": "en-us/wall.mp3"
+    },
+    "want": {
+      "text": "want",
+      "file": "en-us/want.mp3"
+    },
+    "washington_d_c": {
+      "text": "Washington D.C.",
+      "file": "en-us/washington_d_c.mp3"
+    },
+    "waste": {
+      "text": "waste",
+      "file": "en-us/waste.mp3"
+    },
+    "west": {
+      "text": "west",
+      "file": "en-us/west.mp3"
+    },
+    "which": {
+      "text": "which",
+      "file": "en-us/which.mp3"
+    },
+    "will": {
+      "text": "will",
+      "file": "en-us/will.mp3"
+    },
+    "wonder": {
+      "text": "wonder",
+      "file": "en-us/wonder.mp3"
+    },
+    "work": {
+      "text": "work",
+      "file": "en-us/work.mp3"
+    },
+    "write": {
+      "text": "write",
+      "file": "en-us/write.mp3"
+    }
+  }
+}
