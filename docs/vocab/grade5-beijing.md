@@ -1,0 +1,176 @@
+# 北京出版社（新国标）五年级词汇表
+
+来源：2026-09-19 立项会话中直接粘贴的词表，共 170 条。
+
+| 序号 | 英文 | 音标 | 中文 |
+| --- | --- | --- | --- |
+| 1 | which | /wɪtʃ/ | 哪个，哪些 |
+| 2 | journey | /ˈdʒɜːni/ | 旅行，旅程 |
+| 3 | difficult | /ˈdɪfɪkəlt/ | 困难的 |
+| 4 | ancient | /ˈeɪnʃənt/ | 古代的，古老的 |
+| 5 | India | /ˈɪndiə/ | 印度 |
+| 6 | subject | /ˈsʌbdʒɪkt/ | 学科；主题 |
+| 7 | maths (=mathematics, AmE math) |  | 数学 |
+| 8 | music | /ˈmjuːzɪk/ | 音乐 |
+| 9 | calligraphy | /kəˈlɪɡrəfi/ | 书法 |
+| 10 | PE (=physical education) |  | 体育 |
+| 11 | important | /ɪmˈpɔːt(ə)nt/ | 重要的 |
+| 12 | over | /ˈəʊvə(r)/ | 在……上方 / 上面 |
+| 13 | quiet | /ˈkwaɪət/ | 安静的；不嘈杂的 |
+| 14 | place | /pleɪs/ | 地方；地点 |
+| 15 | hill | /hɪl/ | 小山，山岗 |
+| 16 | take | /teɪk/ | 带领，引领；拿 |
+| 17 | some | /sʌm; səm/ | 一些 |
+| 18 | delicious | /dɪˈlɪʃəs/ | 美味的 |
+| 19 | us | /ʌs; əs/ | 我们（宾格） |
+| 20 | practice | /ˈpræktɪs/ | 练习 |
+| 21 | every | /ˈevri/ | 每个，每一个 |
+| 22 | write | /raɪt/ | 写，书写 |
+| 23 | character | /ˈkærəktə(r)/ | 符号，文字；角色 |
+| 24 | Mid-Autumn Festival |  | 中秋节 |
+| 25 | fifteenth | /ˌfɪfˈtiːnθ/ | 第十五 |
+| 26 | eighth | /eɪtθ/ | 第八（个） |
+| 27 | month | /mʌnθ/ | 月（份） |
+| 28 | lunar calendar |  | 阴历 |
+| 29 | usually | /ˈjuːʒuəli; ˈjuːʒəli/ | 通常；一般地 |
+| 30 | middle | /ˈmɪd(ə)l/ | 中间 |
+| 31 | moon | /muːn/ | 月亮 |
+| 32 | cake | /keɪk/ | 蛋糕 |
+| 33 | any | /ˈeni/ | 任何，一些 |
+| 34 | Double Ninth Festival |  | 重阳节 |
+| 35 | ninth | /naɪnθ/ | 第九（个） |
+| 36 | elder | /ˈeldə(r)/ | 年长者；有威望的长者 |
+| 37 | here | /hɪə(r)/ | 这里 |
+| 38 | life (pl. lives) |  | 生活，生命；寿命 |
+| 39 | something | /ˈsʌmθɪŋ/ | 某物，某事 |
+| 40 | care | /keə(r)/ | 关心；照顾 |
+| 41 | Tomb-sweeping Day |  | 清明节 |
+| 42 | traditional | /trəˈdɪʃən(ə)l/ | 传统的，习俗的 |
+| 43 | solar term |  | 节气 |
+| 44 | their | /ðeə(r)/ | 他们的 |
+| 45 | country | /ˈkʌntri/ | 国家 |
+| 46 | south | /saʊθ/ | 南方；南部 |
+| 47 | ball | /bɔːl/ | 球 |
+| 48 | public | /ˈpʌblɪk/ | 公共的 |
+| 49 | email | /ˈiːmeɪl/ | 电子邮件 |
+| 50 | crop | /krɒp/ | 庄稼，作物 |
+| 51 | north | /nɔːθ/ | 北方；北部 |
+| 52 | roll | /rəʊl/ | 卷 |
+| 53 | grow | /ɡrəʊ/ | 生长；栽种 |
+| 54 | thing | /θɪŋ/ | 物品，事情；情形 |
+| 55 | harvest | /ˈhɑːvɪst/ | 收割；收获 |
+| 56 | keep | /kiːp/ | 保持 |
+| 57 | store up |  | 储存 |
+| 58 | camp | /kæmp/ | 营地；露营，野营 |
+| 59 | trip | /trɪp/ | 旅行，旅游；出行 |
+| 60 | pick | /pɪk/ | 摘；选择，挑选 |
+| 61 | vegetable | /ˈvedʒtəb(ə)l/ | 蔬菜 |
+| 62 | set | /set/ | 设置 |
+| 63 | ourselves | /ɑːˈselvz/ | 我们自己 |
+| 64 | myself | /maɪˈself/ | 我自己；我本人 |
+| 65 | never | /ˈnevə(r)/ | 从不，不可能 |
+| 66 | before | /bɪˈfɔː(r)/ | 以前，从前 |
+| 67 | take out |  | 拿出去 |
+| 68 | rubbish | /ˈrʌbɪʃ/ | 垃圾 |
+| 69 | all | /ɔːl/ | 都是，全 |
+| 70 | volunteer | /ˌvɒlənˈtɪə(r)/ | 志愿者 |
+| 71 | poster | /ˈpəʊstə(r)/ | 海报 |
+| 72 | ask | /ɑːsk/ | 询问，邀请 |
+| 73 | service | /ˈsɜːvɪs/ | 服务 |
+| 74 | sort | /sɔːt/ | 把……分类；种类 |
+| 75 | wall | /wɔːl/ | 墙，墙壁 |
+| 76 | helpful | /ˈhelpf(ə)l/ | 有帮助的 |
+| 77 | recyclable | /ˌriːˈsaɪkləbl/ | 可回收利用的 |
+| 78 | harmful | /ˈhɑːmf(ə)l/ | 有害的 |
+| 79 | waste | /weɪst/ | 废弃物 |
+| 80 | bag | /bæɡ/ | 袋，包 |
+| 81 | will | /wɪl/ | 将要 |
+| 82 | amazing | /əˈmeɪzɪŋ/ | 令人惊喜的；了不起的 |
+| 83 | famous | /ˈfeɪməs/ | 著名的，出名的 |
+| 84 | hometown | /ˈhəʊmtaʊn/ | 家乡 |
+| 85 | stay | /steɪ/ | 停留，待 |
+| 86 | few | /fjuː/ | 一些，少许 |
+| 87 | by | /baɪ/ | 乘，通过 |
+| 88 | choice | /tʃɔɪs/ | 选择 |
+| 89 | train | /treɪn/ | 火车，列车 |
+| 90 | car | /kɑː(r)/ | 汽车，小轿车 |
+| 91 | sure | /ʃʊə(r); ʃɔː(r)/ | 确定 |
+| 92 | only | /ˈəʊnli/ | 仅，只 |
+| 93 | hour | /ˈaʊə(r)/ | 小时 |
+| 94 | high-speed train |  | 高铁 |
+| 95 | convenient | /kənˈviːniənt/ | 方便的 |
+| 96 | more than |  | 比……更多 |
+| 97 | plan | /plæn/ | 计划 |
+| 98 | history | /ˈhɪstri; ˈhɪstəri/ | 历史 |
+| 99 | busy | /ˈbɪzi/ | 忙的，繁忙的 |
+| 100 | leave | /liːv/ | 离开，出发 |
+| 101 | say | /seɪ/ | 说 |
+| 102 | p.m. |  | 下午 |
+| 103 | ride | /raɪd/ | 骑 |
+| 104 | bike (=bicycle) |  | 自行车 |
+| 105 | east | /iːst/ | 东方；东部 |
+| 106 | west | /west/ | 西方；西部 |
+| 107 | view | /vjuː/ | 景色；观点 |
+| 108 | slow | /sləʊ/ | 慢的，缓慢的 |
+| 109 | map | /mæp/ | 地图 |
+| 110 | Asia | /ˈeɪʒə; ˈeɪʃə/ | 亚洲 |
+| 111 | Africa | /ˈæfrɪkə/ | 非洲 |
+| 112 | Europe | /ˈjʊərəp/ | 欧洲 |
+| 113 | North America |  | 北美洲 |
+| 114 | Oceania | /ˌəʊsiˈɑːniə/ | 大洋洲 |
+| 115 | Antarctica | /ænˈtɑːktɪkə/ | 南极洲 |
+| 116 | culture | /ˈkʌltʃə(r)/ | 文化；文明 |
+| 117 | report | /rɪˈpɔːt/ | 报告，汇报 |
+| 118 | question | /ˈkwestʃən/ | 问题 |
+| 119 | China | /ˈtʃaɪnə/ | 中国 |
+| 120 | Australia | /ɒˈstreɪliə/ | 澳大利亚 |
+| 121 | capital | /ˈkæpɪt(ə)l/ | 首都 |
+| 122 | city | /ˈsɪti/ | 城市，都市 |
+| 123 | France | /frɑːns/ | 法国 |
+| 124 | Paris | /ˈpærɪs/ | 巴黎 |
+| 125 | speak | /spiːk/ | 说，说话 |
+| 126 | French | /frentʃ/ | 法语；法国的，法国人的 |
+| 127 | Canadian | /kəˈneɪdiən/ | 加拿大人；加拿大的，加拿大人的 |
+| 128 | British | /ˈbrɪtɪʃ/ | 英国人；英国的，英国人的 |
+| 129 | want | /wɒnt/ | 想要 |
+| 130 | the UK |  | 英国 |
+| 131 | London | /ˈlʌndən/ | 伦敦 |
+| 132 | River Thames |  | 泰晤士河 |
+| 133 | other | /ˈʌðə(r)/ | 别的，其他的 |
+| 134 | Big Ben |  | 大本钟 |
+| 135 | clock | /klɒk/ | 钟，钟表 |
+| 136 | heavy | /ˈhevi/ | 沉的，沉重的 |
+| 137 | tower | /ˈtaʊə(r)/ | 塔，塔楼 |
+| 138 | bank | /bæŋk/ | 岸；银行 |
+| 139 | top | /tɒp/ | 顶端，顶部 |
+| 140 | New Delhi |  | 新德里 |
+| 141 | Taj Mahal |  | 泰姬陵 |
+| 142 | most | /məʊst/ | 最大，最多 |
+| 143 | wonder | /ˈwʌndə(r)/ | 奇观；惊奇 |
+| 144 | Italy | /ˈɪtəli/ | 意大利 |
+| 145 | Rome | /rəʊm/ | 罗马 |
+| 146 | Venice | /ˈvenɪs/ | 威尼斯 |
+| 147 | gondola | /ˈɡɒndələ/ | 威尼斯小划船 |
+| 148 | taxi | /ˈtæksi/ | 出租车，的士 |
+| 149 | Washington D.C. |  | 华盛顿特区 |
+| 150 | New York |  | 纽约 |
+| 151 | work | /wɜːk/ | 工作 |
+| 152 | popular | /ˈpɒpjələ(r)/ | 受欢迎的 |
+| 153 | badminton | /ˈbædmɪntən/ | 羽毛球 |
+| 154 | hit | /hɪt/ | 打，击 |
+| 155 | miss | /mɪs/ | 错过 |
+| 156 | much | /mʌtʃ/ | 很多，非常 |
+| 157 | tennis | /ˈtenɪs/ | 网球 |
+| 158 | rugby | /ˈrʌɡbi/ | 英式橄榄球 |
+| 159 | lesson | /ˈles(ə)n/ | 一节课；一堂课 |
+| 160 | team | /tiːm/ | 运动队；（工作）队/组 |
+| 161 | really | /ˈrɪəli/ | 确实，真正地 |
+| 162 | newspaper | /ˈnjuːzpeɪpə(r)/ | 报纸 |
+| 163 | skiing | /ˈskiːɪŋ/ | 滑雪 |
+| 164 | ice hockey |  | 冰球 |
+| 165 | age | /eɪdʒ/ | 年龄；时期 |
+| 166 | medal | /ˈmed(ə)l/ | 奖牌；奖章；勋章 |
+| 167 | Olympics (=the Olympic Games) |  | 奥林匹克运动会 |
+| 168 | exciting | /ɪkˈsaɪtɪŋ/ | 令人兴奋的；令人激动的 |
+| 169 | single | /ˈsɪŋɡ(ə)l/ | 单个的 |
+| 170 | double | /ˈdʌb(ə)l/ | 双的 |

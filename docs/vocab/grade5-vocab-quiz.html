@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>过关题｜五年级上册词汇积木闯关</title>
+<style>
+:root{
+  --bg:#EEF4FF; --paper:#FFFFFF; --ink:#17213B; --muted:#56637F; --line:#D3DDF2;
+  --p:#C9560A; --r:#2B62D9; --s:#1F8A57;
+  --pt:#FFEBD9; --rt:#DEE9FF; --st:#DAF3E6; --hi:#FFE27A; --bad:#FDE3E3; --good:#DDF5E8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1629; --paper:#182240; --ink:#EDF1FF; --muted:#A9B4D6; --line:#2C3960;
+    --pt:#3B2616; --rt:#1B2C55; --st:#173B2C; --hi:#7A6410; --bad:#4A2226; --good:#17402E;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1629; --paper:#182240; --ink:#EDF1FF; --muted:#A9B4D6; --line:#2C3960;
+  --pt:#3B2616; --rt:#1B2C55; --st:#173B2C; --hi:#7A6410; --bad:#4A2226; --good:#17402E;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC","Source Han Sans SC",system-ui,sans-serif;
+  font-size:17px; line-height:1.8;
+}
+.wrap{max-width:900px; margin:0 auto; padding:20px 16px 60px}
+h1,h2,h3{line-height:1.35; margin:0}
+p{margin:.5em 0}
+.muted{color:var(--muted)}
+.en{font-family:"Trebuchet MS","Segoe UI",Verdana,system-ui,sans-serif; font-weight:700}
+
+/* 积木 */
+.blk{
+  --c:var(--r);
+  display:inline-block; position:relative; background:var(--c); color:#fff;
+  font-family:"Trebuchet MS","Segoe UI",Verdana,system-ui,sans-serif; font-weight:800;
+  padding:.05em .5em .08em; margin:6px 3px 2px; border-radius:9px;
+  box-shadow:0 4px 0 rgba(0,0,0,.25); line-height:1.35; white-space:nowrap;
+}
+.blk::before{content:""; position:absolute; top:-5px; left:.4em; width:.5em; height:6px;
+  border-radius:3px 3px 0 0; background:var(--c); box-shadow:.9em 0 0 var(--c)}
+.blk.p{--c:var(--p)} .blk.r{--c:var(--r)} .blk.s{--c:var(--s)}
+.bx{display:inline-block}
+.big .blk{font-size:1.9em; padding:.05em .45em .08em; margin:10px 4px 4px}
+
+/* 封面 */
+.cover{background:var(--paper); border:2px solid var(--line); border-radius:28px; padding:32px 24px 26px; text-align:center}
+.cover h1{font-size:clamp(2.2rem,7vw,3.3rem); letter-spacing:.06em}
+.cover .sub{font-size:1.05rem; color:var(--muted); margin-top:6px}
+.hero{margin:20px 0 4px}
+.hero .under{display:flex; justify-content:center; gap:10px; flex-wrap:wrap}
+.hero .under span{min-width:96px; font-weight:700}
+.hero .under .a{color:var(--p)} .hero .under .b{color:var(--r)} .hero .under .c{color:var(--s)}
+.result{display:inline-block; margin-top:10px; padding:6px 20px; border-radius:999px; background:var(--hi); font-weight:800; font-size:1.1rem}
+
+.rules3{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:14px; margin-top:22px; text-align:left}
+.rules3 > div{border:2px dashed var(--line); border-radius:16px; padding:12px 16px}
+.rules3 h3{font-size:1.02rem; margin-bottom:2px}
+.rules3 ul{margin:.2em 0 0; padding-left:1.2em}
+
+.mapgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin-top:20px; text-align:left}
+.mapgrid a{display:block; text-decoration:none; color:inherit; border:2px solid var(--line); border-radius:14px; padding:8px 12px; background:var(--paper)}
+.mapgrid a:hover{border-color:var(--r)}
+.mapgrid b{display:block}
+.mapgrid small{color:var(--muted)}
+.mapgrid .no{display:inline-block; min-width:2.6em; text-align:center; color:#fff; border-radius:8px; font-weight:800; margin-right:6px; padding:0 6px}
+
+/* 关卡 */
+.level{background:var(--paper); border:2px solid var(--line); border-radius:24px; padding:22px 22px 24px; margin:28px 0}
+.lv-head{display:flex; align-items:center; gap:14px; margin-bottom:12px}
+.lv-no{flex:none; min-width:68px; text-align:center; padding:6px 10px; border-radius:14px; color:#fff; font-weight:800; font-size:1.02rem; box-shadow:0 4px 0 rgba(0,0,0,.22)}
+.lv-head h2{font-size:1.5rem}
+.lv-head .goal{display:block; font-size:.92rem; font-weight:500; color:var(--muted); margin-top:2px}
+.chip{display:inline-block; font-size:.78rem; font-weight:700; padding:0 10px; border-radius:999px; background:var(--rt); color:var(--muted); margin-left:8px; vertical-align:middle}
+
+.say{display:flex; gap:12px; align-items:flex-start; margin:12px 0}
+.say .av{flex:none; width:48px; height:48px; border-radius:50%; background:var(--hi); display:grid; place-items:center; font-size:1.5rem}
+.say .bubble{flex:1; background:var(--rt); border-radius:6px 18px 18px 18px; padding:8px 16px}
+.say .bubble b{color:var(--r)}
+
+.note{border-radius:14px; padding:10px 14px; margin:12px 0; background:var(--hi)}
+.note.soft{background:var(--rt)}
+.grid{display:grid; gap:12px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.tile{border:2px solid var(--line); border-radius:14px; padding:10px 14px}
+.tile h3{font-size:1rem}
+.tile p{margin:.2em 0}
+
+.part h3{font-size:1.05rem; margin:18px 0 4px; color:var(--r)}
+ol.q{margin:.3em 0 .3em; padding-left:1.7em}
+ol.q li{margin:.5em 0; padding-left:.2em}
+.line{display:inline-block; min-width:4.2em; border-bottom:2px solid var(--ink); height:1.1em; vertical-align:baseline; margin:0 2px}
+.line.long{min-width:8em}
+.sm{font-size:.9rem; color:var(--muted)}
+
+.score{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-top:16px; padding:10px 16px; border:2px dashed var(--r); border-radius:14px; break-inside:avoid}
+.score b{color:var(--r)}
+details.ans{margin-top:10px; break-inside:avoid}
+details.ans summary{cursor:pointer; display:inline-block; padding:4px 14px; border-radius:999px; background:var(--r); color:#fff; font-weight:700; font-size:.92rem; list-style:none}
+details.ans summary::-webkit-details-marker{display:none}
+details.ans summary:focus-visible, .ctl button:focus-visible, .mapgrid a:focus-visible{outline:3px solid var(--hi); outline-offset:2px}
+details.ans[open] summary{background:var(--muted)}
+details.ans .a{margin-top:8px; background:var(--good); border-radius:12px; padding:8px 16px}
+details.ans .a h4{margin:8px 0 0; font-size:.98rem}
+details.ans .a ol{margin:.2em 0; padding-left:1.7em}
+details.ans .a li{margin:.25em 0}
+.tip{margin-top:8px; padding-top:8px; border-top:2px dashed var(--line)}
+
+/* 预览区 */
+.ctl{display:flex; gap:10px; flex-wrap:wrap; margin:10px 0}
+.ctl button{font:inherit; font-weight:700; border:0; border-radius:999px; padding:6px 18px; background:var(--r); color:#fff; cursor:pointer}
+.pv{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px}
+.pvc{border:2px solid var(--line); border-radius:14px; padding:6px 10px; text-align:center}
+.pvc .w{display:block; font-size:1.1rem}
+.pvc .sy{display:block; font-size:.78rem; color:var(--muted)}
+.pvc .zh{display:block; font-weight:700}
+.pv.hidezh .zh{visibility:hidden}
+
+/* 老师页 */
+.tags{display:flex; flex-wrap:wrap; gap:6px 8px; margin:6px 0 12px}
+.tags span{padding:1px 10px; border-radius:999px; background:var(--rt); font-size:.9rem}
+.tags.p span{background:var(--pt)} .tags.s span{background:var(--st)}
+table.t{width:100%; border-collapse:collapse; margin-top:8px}
+table.t th, table.t td{border:2px solid var(--line); padding:6px 10px; text-align:left; vertical-align:top}
+table.t th{background:var(--rt)}
+.tbl-scroll{overflow-x:auto}
+.foot{text-align:center; color:var(--muted); font-size:.9rem; margin-top:28px}
+
+@page{size:A4; margin:12mm}
+@media print{
+  body{background:#fff; color:#000; font-size:14px}
+  :root{--bg:#fff; --paper:#fff}
+  .wrap{max-width:none; padding:0}
+  .level{border:0; border-radius:0; padding:0; margin:0; page-break-before:always}
+  .cover{page-break-after:always}
+  .ctl{display:none}
+  .blk,.lv-no,.say .av{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  details.ans:not([open]){display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="cover">
+  <h1>过关题</h1>
+  <p class="sub">五年级上册词汇 · 积木法闯关（共 <span id="totalQ">82</span> 题 · 9 关）</p>
+  <div class="hero big">
+    <span class="bx" data-b="re.p+cycle.r+able.s"></span>
+    <div class="under"><span class="a">再</span><span class="b">循环</span><span class="c">能……的</span></div>
+    <div class="result">可回收利用的 ♻️</div>
+  </div>
+
+  <div class="rules3">
+    <div><h3>🧭 怎么闯关</h3><ul>
+      <li>一关约 15 分钟，先自己做，<b>不翻书</b>。</li>
+      <li>做完再点“看答案”，用红笔改错。</li>
+      <li>达到通关线，就在方框里画 ⭐。</li></ul></div>
+    <div><h3>🔧 错了怎么办</h3><ul>
+      <li>不是整词重抄，先问：<b>哪一块积木错了？</b></li>
+      <li>词头、词心、词尾、双胞胎，四选一。</li>
+      <li>错题第 2、3、7 天各再做一次。</li></ul></div>
+    <div><h3>👨‍🏫 老师和家长</h3><ul>
+      <li>每关标了对应的教学原理。</li>
+      <li>最后有 170 个词的分流表和备课节奏。</li>
+      <li>不方便拆的词，用“盖住再想”（第 8 关）。</li></ul></div>
+  </div>
+
+  <div class="mapgrid" id="map"></div>
+</header>
+
+<div id="levels"></div>
+
+<!-- 老师页 -->
+<section class="level" id="teacher">
+  <div class="lv-head"><div class="lv-no" style="background:var(--muted)">备课页</div><h2>170 个词怎么分流<span class="goal">不是每个词都适合拆。能拆的拆，其余的换方法。</span></h2></div>
+
+  <div class="note soft">本册 170 个词里，适合做词素拆分的约占五分之一（下面第 1、2 类）。其余词强行拆会牵强，建议走“话题词群 + 音节切块 + 盖住再想”。</div>
+
+  <h3>① 可拆词（词头、词心、词尾）→ 第 1、2、5 关</h3>
+  <div class="tags"><span>helpful</span><span>harmful</span><span>recyclable</span><span>usually</span><span>really</span><span>traditional</span><span>amazing</span><span>exciting</span><span>famous</span><span>skiing</span><span>poster</span><span>Canadian</span><span>British</span><span>fifteenth</span><span>eighth</span><span>ninth</span><span>report</span></div>
+
+  <h3>② 复合词与词组 → 第 3 关</h3>
+  <div class="tags"><span>hometown</span><span>newspaper</span><span>something</span><span>ourselves</span><span>myself</span><span>email</span><span>Mid-Autumn Festival</span><span>Double Ninth Festival</span><span>Tomb-sweeping Day</span><span>high-speed train</span><span>lunar calendar</span><span>ice hockey</span></div>
+
+  <h3>③ 一词多义（先记本义）→ 第 7 关</h3>
+  <div class="tags p"><span>take</span><span>pick</span><span>view</span><span>sort</span><span>subject</span><span>character</span><span>ask</span><span>care</span><span>capital</span><span>age</span><span>miss</span><span>top</span><span>set</span><span>life</span><span>bank</span></div>
+
+  <h3>④ 易混双胞胎 → 第 6 关</h3>
+  <div class="tags p"><span>quiet – quite</span><span>helpful – harmful</span><span>their – there（here）</span><span>hour – our</span></div>
+
+  <h3>⑤ 话题词群（整体归类，不拆）→ 第 8 关的方法：音节切块 + 盖住再想</h3>
+  <div class="tags s">
+    <span>节日节气：moon, cake, elder, middle, solar term</span>
+    <span>农事：grow, crop, harvest, pick, vegetable, store up</span>
+    <span>环保：rubbish, waste, bag, volunteer, service, sort</span>
+    <span>出行：train, car, taxi, bike, ride, gondola, convenient, slow, journey, trip</span>
+    <span>方位与大洲：north, south, east, west, Asia, Africa, Europe, North America, Oceania, Antarctica</span>
+    <span>国家城市景点：India, China, Australia, France, Paris, London, Rome, Venice, New Delhi, New York, Big Ben, Taj Mahal</span>
+    <span>体育：badminton, tennis, rugby, ice hockey, ball, team, medal, Olympics</span>
+    <span>学科：maths, music, calligraphy, PE</span>
+  </div>
+
+  <h3>推荐节奏（间隔重复）</h3>
+  <div class="tbl-scroll"><table class="t">
+    <tr><th>时间</th><th>做什么</th></tr>
+    <tr><td>第 1 天</td><td>第 1、2 关；当堂做完后隔一会儿，盖住再默写 3 个词</td></tr>
+    <tr><td>第 2 天</td><td>第 3 关；重做第 1、2 关的错题</td></tr>
+    <tr><td>第 3 天</td><td>第 4、5 关；重做前两天错题</td></tr>
+    <tr><td>第 4 天</td><td>第 6、7 关</td></tr>
+    <tr><td>第 5 天</td><td>第 8 关（盖住再想）</td></tr>
+    <tr><td>第 7 天</td><td>第 9 关毕业挑战，加错题总复习</td></tr>
+    <tr><td>每月</td><td>随机抽 20 个词盖住再想，全册整理一轮</td></tr>
+  </table></div>
+
+  <h3 style="margin-top:16px">错因诊断（对应“错的不是单词，是某块积木”）</h3>
+  <div class="tbl-scroll"><table class="t">
+    <tr><th>错因</th><th>典型表现</th><th>对应关卡</th></tr>
+    <tr><td>词头 / 词根块认错</td><td>拆分位置错、忘记去 e</td><td>第 1、4 关</td></tr>
+    <tr><td>词尾、词性搞混</td><td>该用形容词却写成名词</td><td>第 2 关</td></tr>
+    <tr><td>本义没记牢</td><td>多义词只会一个意思</td><td>第 7 关</td></tr>
+    <tr><td>形近、音近混淆</td><td>quiet/quite，their/there</td><td>第 6 关</td></tr>
+    <tr><td>提取不出来</td><td>看着认识，默写不出</td><td>第 8 关</td></tr>
+  </table></div>
+</section>
+
+<p class="foot">过关题｜词头（橙）／词心（蓝）／词尾（绿）</p>
+</div>
+
+<script>
+(function(){
+  function build(str){
+    return str.split("+").map(function(part){
+      var i = part.lastIndexOf(".");
+      return '<span class="blk '+part.slice(i+1)+'">'+part.slice(0,i)+'</span>';
+    }).join("");
+  }
+  function T(s){
+    return s.replace(/\{\{([^}]+)\}\}/g, function(m,x){ return '<span class="bx">'+build(x)+'</span>'; })
+            .replace(/_{5,}/g,'<span class="line long"></span>')
+            .replace(/_{3,4}/g,'<span class="line"></span>');
+  }
+  document.querySelectorAll("[data-b]").forEach(function(el){ el.innerHTML = build(el.getAttribute("data-b")); });
+
+  var COL = ["var(--r)","var(--p)","var(--s)"];
+
+  var L = [
+  { t:"拆积木", pr:"组块化", g:"看到单词，先拆成词头、词心、词尾", pass:6,
+    say:"先别急着背！把单词拆成积木，<b>每块认识，整个词就认识</b>。",
+    intro:`<div class="note soft">📌 <b>例题：</b>usually ＝ {{usual.r+ly.s}}　词性：副词　意思：通常地</div>`,
+    parts:[{h:"",
+      items:[
+        `helpful ＝ ___ + ___　词性：___`,
+        `harmful ＝ ___ + ___　词性：___`,
+        `really ＝ ___ + ___　词性：___`,
+        `recyclable ＝ ___ + ___ + ___　词性：___`,
+        `traditional ＝ ___ + ___　词性：___`,
+        `famous ＝ ___ + ___　词性：___　<span class="sm">（提示：fame 去掉 e）</span>`,
+        `amazing ＝ ___ + ___　词性：___　<span class="sm">（提示：amaze 去掉 e）</span>`
+      ],
+      ans:[
+        `{{help.r+ful.s}} 形容词（有帮助的）`,
+        `{{harm.r+ful.s}} 形容词（有害的）`,
+        `{{real.r+ly.s}} 副词（确实地）`,
+        `{{re.p+cycle.r+able.s}} 形容词（再 + 循环 + 能……的 ＝ 可回收利用的）`,
+        `{{tradition.r+al.s}} 形容词（传统的）`,
+        `{{fam.r+ous.s}} 形容词（fame 去 e 再加 -ous）`,
+        `{{amaz.r+ing.s}} 形容词（amaze 去 e 再加 -ing）`
+      ]}],
+    tip:"拆错多半是两种原因：忘了“去 e”，或者把词尾 -ful 当成了词心。" },
+
+  { t:"词尾变身", pr:"形态学：词尾定词性", g:"看词尾判词性，会给词心戴对帽子", pass:8,
+    say:"词尾像帽子，<b>戴什么帽子，词就变成什么身份</b>。",
+    intro:`<div class="note soft">📌 名词帽：-tion　形容词帽：-ful、-able、-al、-ing　副词帽：-ly</div>`,
+    parts:[
+      {h:"A　看词尾，判词性（写：名 / 形 / 副）",
+       items:[`usually　（___）`,`helpful　（___）`,`recyclable　（___）`,`tradition　（___）`,`really　（___）`],
+       ans:[`副词（-ly）`,`形容词（-ful）`,`形容词（-able）`,`名词（-tion）`,`副词（-ly）`]},
+      {h:"B　给括号里的词心戴上正确的帽子",
+       items:[
+        `The volunteers are very _____ (help) to us.`,
+        `Plastic bags are _____ (harm) to the earth.`,
+        `We _____ (usual) go to school by bike.`,
+        `This is a _____ (tradition) festival in China.`,
+        `The Olympics are very _____ (excite).`],
+       ans:[`helpful（帮助 + ful）`,`harmful（伤害 + ful）`,`usually（usual + ly）`,`traditional（tradition + al）`,`exciting（excite 去 e，加 -ing）`]}
+    ],
+    tip:"填空时先看句子缺什么：缺“什么样的”用形容词帽，缺“怎么做”用 -ly 副词帽。" },
+
+  { t:"复合与词组积木", pr:"组块化 + 双编码", g:"把小词拼成大词，把词组拆成几块", pass:8,
+    say:"有的单词是<b>两个小词拼在一起</b>的，有的词组是<b>几块意思拼起来</b>的。",
+    intro:"",
+    parts:[
+      {h:"A　拼一拼：把积木拼成单词，再写中文",
+       items:[
+        `home + town ＝ _____（中文：_____）`,
+        `news + paper ＝ _____（中文：_____）`,
+        `some + thing ＝ _____（中文：_____）`,
+        `e（电子的）+ mail ＝ _____（中文：_____）`,
+        `our + selves ＝ _____（中文：_____）`,
+        `my + self ＝ _____（中文：_____）`],
+       ans:[`hometown　家乡`,`newspaper　报纸`,`something　某物、某事`,`email　电子邮件`,`ourselves　我们自己`,`myself　我自己（self 的复数是 selves）`]},
+      {h:"B　拆词组：把每块的意思拼起来，猜整个词组",
+       items:[
+        `Mid（中间）+ Autumn（秋天）+ Festival（节日）＝ _____`,
+        `Double（双）+ Ninth（第九）+ Festival ＝ _____`,
+        `high（高）+ speed（速度）+ train（火车）＝ _____`,
+        `Tomb（坟墓）+ sweeping（打扫）+ Day ＝ _____`],
+       ans:[`中秋节`,`重阳节（九月初九，两个九）`,`高铁`,`清明节（扫墓的日子）`]}
+    ],
+    tip:"复合词错了，先看是哪一个小词写漏了字母，比如 some + thing 不要写成 somthing。" },
+
+  { t:"单词家族", pr:"同根批量记词", g:"抓住词心，一次记住一整家", pass:10,
+    say:"同一个词心生出来的是<b>一家人</b>，打包一起记最牢。",
+    intro:`<div class="note soft">📌 port 家族：词心 {{port.r}} ＝ 搬运。　词头：ex ＝ 向外　im ＝ 向里　re ＝ 回　trans ＝ 跨过去</div>`,
+    parts:[
+      {h:"A　port 家族（词库：运输　出口　进口　报告）",
+       items:[
+        `{{ex.p+port.r}} ＝ _____`,
+        `{{im.p+port.r}} ＝ _____`,
+        `{{re.p+port.r}} ＝ _____　<span class="sm">（提示：把消息“搬”回来）</span>`,
+        `{{trans.p+port.r}} ＝ _____`,
+        `Many countries _____ tea from China. (export / import)`,
+        `Each group will give a _____ about their journey.`,
+        `A high-speed train can _____ many people quickly.`],
+       ans:[`出口（export）`,`进口（import）`,`报告（report）`,`运输（transport）`,`import（进口茶叶）`,`report（报告）`,`transport（运输）`]},
+      {h:"B　序数词家族：数字 + th",
+       items:[
+        `fifteen → _____`,`eight → _____`,`nine → _____`,`six → _____　<span class="sm">（没学过，试试）</span>`,
+        `中秋节在农历八月十五：It is on the _____ day of the _____ month of the lunar calendar.`],
+       ans:[`fifteenth`,`eighth（eight 只加 h）`,`ninth（nine 去 e，再加 th）`,`sixth`,`fifteenth；eighth`]}
+    ],
+    tip:"序数词最容易错的是 eighth 和 ninth：eight 只加 h，nine 要去掉 e。" },
+
+  { t:"国家与人", pr:"规律迁移", g:"从国家名推出“……人、……的”", pass:5,
+    say:"规律：多数国家名后面加 <b>-ian</b> 或 <b>-an</b>，就变成“……国的、……国人”。但也有<b>特别的</b>，要单独记。",
+    intro:"",
+    parts:[{h:"写出对应的词",
+      items:[`Canada → _____`,`India → _____`,`Italy → _____　<span class="sm">（提示：去掉 y）</span>`,`Australia → _____`,`France → _____　<span class="sm">（特别的！）</span>`,`the UK → _____　<span class="sm">（特别的！）</span>`],
+      ans:[`Canadian`,`Indian`,`Italian`,`Australian`,`French（特别的）`,`British（特别的）`]}],
+    tip:"Canadian、British、French 是本册单词；India、Italy、Australia 是同规律的迁移词，能猜对说明规律会用了。中国是 China → Chinese，也是特别的。" },
+
+  { t:"双胞胎侦探", pr:"形近易混辨析", g:"抓住不一样的那一块，永久分清", pass:7,
+    say:"长得像的词最容易认错。<b>找到它们不一样的那一块</b>，就能分清。",
+    intro:`<div class="grid g2">
+      <div class="tile"><h3>🤫 quiet　/　quite 💯</h3><p>quiet 读<b>两拍</b> qui·et，安静的；quite 读<b>一拍</b>，相当、很。</p></div>
+      <div class="tile"><h3>🤗 helpful　/　harmful ⚠️</h3><p>帽子一样（-ful），词心不同：<b>help</b> 帮助，<b>harm</b> 伤害。</p></div>
+      <div class="tile"><h3>👥 their　/　there 📍</h3><p>there 里藏着 <b>here</b>，表示地点；their 是“他们的”。</p></div>
+      <div class="tile"><h3>⏰ hour　/　our 👨‍👩‍👧</h3><p>读音<b>一样</b>！hour 是小时；our 是“我们的”。</p></div>
+    </div>`,
+    parts:[{h:"选词填空",
+      items:[
+        `The library is very _____ . (quiet / quite)`,
+        `It is _____ cold today. (quiet / quite)`,
+        `Plastic bags are _____ to the earth. (helpful / harmful)`,
+        `The volunteers are very _____ to us. (helpful / harmful)`,
+        `_____ hometown is famous for tea. (Their / There)`,
+        `_____ is a clock on the tower. (Their / There)`,
+        `The train ride takes only one _____ . (hour / our)`,
+        `Let’s clean _____ classroom. (hour / our)`],
+      ans:[`quiet（安静）`,`quite（相当）`,`harmful（有害的）`,`helpful（有帮助的）`,`Their（他们的）`,`There（有……，There is 结构）`,`hour（一小时）`,`our（我们的）`]}],
+    tip:"错了先问：是哪一对双胞胎？再想它们不一样的那一块（节拍、词心、here、读音同形不同）。" },
+
+  { t:"一词多义", pr:"先记本义，再推延伸义", g:"从核心意思，推出不同句子里的意思", pass:7,
+    say:"多义词不要一口气全背。<b>先记本义</b>，其他意思都是从它“长”出来的。",
+    intro:`<div class="grid g3">
+      <div class="tile"><h3>take</h3><p>拿在手里 → 拿着你一起走 ＝ <b>带领</b></p></div>
+      <div class="tile"><h3>pick</h3><p>用手指“挑出来” → <b>摘</b>下来 / 从中<b>选择</b></p></div>
+      <div class="tile"><h3>view</h3><p>看 → 看到的东西 ＝ <b>景色</b>；看事情的角度 ＝ <b>观点</b></p></div>
+      <div class="tile"><h3>sort</h3><p>一类东西 → <b>种类</b>；按类分开 → <b>分类</b></p></div>
+      <div class="tile"><h3>subject</h3><p>摆在面前要学、要谈的东西 → <b>学科</b> / <b>主题</b></p></div>
+      <div class="tile"><h3>ask</h3><p>向别人开口 → <b>询问</b>；开口请对方来 → <b>邀请</b></p></div>
+    </div>
+    <p class="sm">这些是帮助记忆的联想，不是严格的词源。</p>`,
+    parts:[{h:"选出画线词在句中的意思（写 A 或 B）",
+      items:[
+        `Can you <b>take</b> us to the hill?　A 拿　B 带领`,
+        `We <b>pick</b> vegetables in the morning.　A 摘　B 选择`,
+        `You can <b>pick</b> one of the two choices.　A 摘　B 选择`,
+        `The <b>view</b> from the tower is amazing.　A 景色　B 观点`,
+        `In my <b>view</b>, trains are more convenient than cars.　A 景色　B 观点`,
+        `What <b>sort</b> of music do you like?　A 种类　B 分类`,
+        `Please <b>sort</b> the rubbish.　A 种类　B 分类`,
+        `Maths is my favourite <b>subject</b>.　A 学科　B 主题`,
+        `She <b>asked</b> me to her birthday party.　A 询问　B 邀请`],
+      ans:[`B 带领`,`A 摘`,`B 选择`,`A 景色`,`B 观点`,`A 种类（名词）`,`B 分类（动词）`,`A 学科`,`B 邀请`]}],
+    tip:"判断方法：看词在句子里是名词还是动词，再回到本义想一想。" },
+
+  { t:"盖住再想", pr:"提取练习", g:"合上书，靠自己想出来", pass:10,
+    say:"先看 2 分钟，说出每个词的<b>音节块</b>。然后点“盖住中文”（或合上书），再做题。",
+    intro:`<div class="ctl"><button type="button" id="hideBtn">盖住中文</button><button type="button" id="showBtn" style="background:var(--line);color:var(--ink)">翻开中文</button></div>
+    <div class="pv" id="pv"></div>`,
+    parts:[
+      {h:"A　看中文，写英文（先在心里把词拆成音节块）",
+       items:[`旅程 _____`,`古老的 _____`,`首都 _____`,`志愿者 _____`,`垃圾 _____`,`奖牌 _____`],
+       ans:[`journey（jour·ney）`,`ancient（an·cient）`,`capital（cap·i·tal）`,`volunteer（vol·un·teer）`,`rubbish（rub·bish）`,`medal（med·al）`]},
+      {h:"B　看音标，写单词，再写中文",
+       items:[
+        `/ˈkwaɪət/　_____　中文：_____`,
+        `/ˈdɪfɪkəlt/　_____　中文：_____`,
+        `/dɪˈlɪʃəs/　_____　中文：_____`,
+        `/kənˈviːniənt/　_____　中文：_____`,
+        `/ˈhɑːvɪst/　_____　中文：_____`,
+        `/ˈpəʊstə(r)/　_____　中文：_____`],
+       ans:[`quiet　安静的`,`difficult　困难的（dif·fi·cult）`,`delicious　美味的（de·li·cious）`,`convenient　方便的（con·ve·nient）`,`harvest　收获`,`poster　海报（post + er）`]}
+    ],
+    tip:"拼不出来时，先按音节块写，再检查最容易错的那一块，比如 -cient、-ous、-nient。" },
+
+  { t:"毕业挑战", pr:"综合 + 猜生词", g:"用所有本领，去猜没学过的新词", pass:6,
+    say:"最后一关！有些词<b>课上没学过</b>，但你已经会拆了。",
+    intro:"",
+    parts:[
+      {h:"A　猜生词（拆一拆，猜意思）",
+       items:[
+        `careful ＝ care + ful → _____`,
+        `harmless ＝ harm + less（less ＝ 没有）→ _____`,
+        `reuse ＝ re + use → _____`,
+        `unusual ＝ un + usual → _____`,
+        `quickly ＝ quick + ly → _____`],
+       ans:[`小心的`,`无害的`,`重复使用`,`不寻常的`,`快速地`]},
+      {h:"B　综合检修",
+       items:[
+        `找错并改正：Plastic bags are <u>helpful</u> to the earth.　→ _____`,
+        `找错并改正：We <u>usual</u> go to school by bike.　→ _____`,
+        `选词：The game is very _____ . (exciting / excited)　<span class="sm">（-ing 表示“令人……的”，-ed 表示“感到……的”）</span>`],
+       ans:[`harmful（塑料袋对地球是“有害的”）`,`usually（这里缺副词帽 -ly）`,`exciting（比赛“令人兴奋”）`]}
+    ],
+    tip:"这一关能拿到 6 分以上，说明你已经学会“看结构、猜意思”了。" }
+  ];
+
+  // 渲染
+  var total = 0, qn, html = "", map = "";
+  L.forEach(function(lv, idx){
+    var n = idx+1, count = 0;
+    lv.parts.forEach(function(p){ count += p.items.length; });
+    total += count;
+    var col = COL[idx % 3];
+    map += '<a href="#lv'+n+'"><span class="no" style="background:'+col+'">第'+n+'关</span><b>'+lv.t+'</b><small>'+lv.pr+'　'+count+' 题</small></a>';
+
+    qn = 0;
+    var body = "", ans = "";
+    lv.parts.forEach(function(p){
+      body += '<div class="part">' + (p.h ? '<h3>'+p.h+'</h3>' : '') + '<ol class="q" start="'+(qn+1)+'">'
+            + p.items.map(function(x){ return '<li>'+T(x)+'</li>'; }).join("") + '</ol></div>';
+      ans += (p.h ? '<h4>'+p.h.split("（")[0]+'</h4>' : '') + '<ol start="'+(qn+1)+'">'
+           + p.ans.map(function(x){ return '<li>'+T(x)+'</li>'; }).join("") + '</ol>';
+      qn += p.items.length;
+    });
+
+    html += '<section class="level" id="lv'+n+'">'
+      + '<div class="lv-head"><div class="lv-no" style="background:'+col+'">第'+n+'关</div>'
+      + '<h2>'+lv.t+'<span class="chip">'+lv.pr+'</span><span class="goal">'+lv.g+'</span></h2></div>'
+      + '<div class="say"><div class="av">🔧</div><div class="bubble">'+lv.say+'</div></div>'
+      + T(lv.intro || "") + body
+      + '<div class="score"><span>得分：<span class="line"></span> / '+count+'</span><span>通关线：<b>'+lv.pass+'</b> 分　☐ 通关 ⭐</span></div>'
+      + '<details class="ans"><summary>看答案</summary><div class="a">'+ans+'<div class="tip">🔎 <b>错了先看：</b>'+lv.tip+'</div></div></details>'
+      + '</section>';
+  });
+  document.getElementById("levels").innerHTML = html;
+  document.getElementById("map").innerHTML = map;
+  document.getElementById("totalQ").textContent = total;
+
+  // 第 8 关预览区
+  var PV = [["journey","jour·ney","旅程"],["difficult","dif·fi·cult","困难的"],["ancient","an·cient","古老的"],["delicious","de·li·cious","美味的"],
+            ["capital","cap·i·tal","首都"],["culture","cul·ture","文化"],["volunteer","vol·un·teer","志愿者"],["rubbish","rub·bish","垃圾"],
+            ["convenient","con·ve·nient","方便的"],["poster","post·er","海报"],["harvest","har·vest","收获"],["medal","med·al","奖牌"]];
+  var pv = document.getElementById("pv");
+  pv.innerHTML = PV.map(function(w){
+    return '<div class="pvc"><span class="w en">'+w[0]+'</span><span class="sy">'+w[1]+'</span><span class="zh">'+w[2]+'</span></div>';
+  }).join("");
+  document.getElementById("hideBtn").addEventListener("click", function(){ pv.classList.add("hidezh"); });
+  document.getElementById("showBtn").addEventListener("click", function(){ pv.classList.remove("hidezh"); });
+})();
+</script>
+</body>
+</html>

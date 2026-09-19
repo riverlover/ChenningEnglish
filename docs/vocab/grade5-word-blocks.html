@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>单词拆拆拆｜五年级词义识记图文教材</title>
+<style>
+:root{
+  --bg:#EEF4FF; --paper:#FFFFFF; --ink:#17213B; --muted:#56637F; --line:#D3DDF2;
+  --p:#C9560A; --r:#2B62D9; --s:#1F8A57;
+  --pt:#FFEBD9; --rt:#DEE9FF; --st:#DAF3E6; --hi:#FFE27A; --bad:#FDE3E3; --good:#DDF5E8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1629; --paper:#182240; --ink:#EDF1FF; --muted:#A9B4D6; --line:#2C3960;
+    --pt:#3B2616; --rt:#1B2C55; --st:#173B2C; --hi:#7A6410; --bad:#4A2226; --good:#17402E;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1629; --paper:#182240; --ink:#EDF1FF; --muted:#A9B4D6; --line:#2C3960;
+  --pt:#3B2616; --rt:#1B2C55; --st:#173B2C; --hi:#7A6410; --bad:#4A2226; --good:#17402E;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC","Source Han Sans SC",system-ui,sans-serif;
+  font-size:17px; line-height:1.75;
+}
+.wrap{max-width:900px; margin:0 auto; padding:20px 16px 60px}
+h1,h2,h3,h4{line-height:1.35; margin:0}
+p{margin:.5em 0}
+.muted{color:var(--muted)}
+.en{font-family:"Trebuchet MS","Segoe UI",Verdana,system-ui,sans-serif; font-weight:800; letter-spacing:.01em}
+
+/* ---------- 积木 blocks ---------- */
+.blk{
+  --c:var(--r);
+  display:inline-block; position:relative; background:var(--c); color:#fff;
+  font-family:"Trebuchet MS","Segoe UI",Verdana,system-ui,sans-serif; font-weight:800;
+  padding:.08em .5em .1em; margin:6px 3px 2px; border-radius:9px;
+  box-shadow:0 4px 0 rgba(0,0,0,.25); line-height:1.35; white-space:nowrap;
+}
+.blk::before{
+  content:""; position:absolute; top:-5px; left:.4em; width:.5em; height:6px;
+  border-radius:3px 3px 0 0; background:var(--c); box-shadow:.9em 0 0 var(--c);
+}
+.blk.p{--c:var(--p)} .blk.r{--c:var(--r)} .blk.s{--c:var(--s)}
+.bx{display:inline-block}
+.big .blk{font-size:1.9em; padding:.05em .45em .08em; margin:10px 4px 4px}
+.mid .blk{font-size:1.3em}
+.gray{display:inline-flex; align-items:center; justify-content:center; width:1.55em; height:1.55em; margin:2px;
+  background:var(--line); color:var(--muted); border-radius:5px; font-weight:700; font-size:.95em}
+
+/* ---------- 封面 ---------- */
+.cover{
+  background:var(--paper); border:2px solid var(--line); border-radius:28px; padding:34px 26px 28px; text-align:center;
+}
+.cover h1{font-size:clamp(2.2rem,7vw,3.4rem); letter-spacing:.06em}
+.cover .sub{font-size:1.1rem; color:var(--muted); margin-top:6px}
+.hero{margin:22px 0 4px}
+.hero .under{display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-top:2px}
+.hero .under span{min-width:96px; font-weight:700}
+.hero .under .a{color:var(--p)} .hero .under .b{color:var(--r)} .hero .under .c{color:var(--s)}
+.result{display:inline-block; margin-top:12px; padding:8px 20px; border-radius:999px; background:var(--hi); font-weight:800; font-size:1.15rem; color:var(--ink)}
+.legend{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; margin-top:26px; text-align:left}
+.lg{border-radius:16px; padding:14px 16px}
+.lg.p{background:var(--pt)} .lg.r{background:var(--rt)} .lg.s{background:var(--st)}
+.lg b{font-size:1.05rem}
+.lg small{display:block; color:var(--muted); font-size:.9rem; line-height:1.55; margin-top:2px}
+
+.how{margin-top:22px; text-align:left; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px}
+.how > div{border:2px dashed var(--line); border-radius:16px; padding:14px 16px}
+.how h3{font-size:1.02rem; margin-bottom:4px}
+.how ul{margin:.2em 0 0; padding-left:1.2em}
+.how li{margin:.15em 0}
+
+/* ---------- 关卡 ---------- */
+.level{background:var(--paper); border:2px solid var(--line); border-radius:24px; padding:22px 22px 24px; margin:28px 0}
+.lv-head{display:flex; align-items:center; gap:14px; margin-bottom:14px}
+.lv-no{flex:none; min-width:68px; text-align:center; padding:6px 10px; border-radius:14px; background:var(--r); color:#fff; font-weight:800; font-size:1.02rem; box-shadow:0 4px 0 rgba(0,0,0,.22)}
+.lv-head h2{font-size:1.5rem}
+.lv-head .goal{display:block; font-size:.92rem; font-weight:500; color:var(--muted); margin-top:2px}
+
+.say{display:flex; gap:12px; align-items:flex-start; margin:14px 0}
+.say .av{flex:none; width:50px; height:50px; border-radius:50%; background:var(--hi); display:grid; place-items:center; font-size:1.6rem}
+.say .bubble{flex:1; background:var(--rt); border-radius:6px 18px 18px 18px; padding:10px 16px}
+.say .bubble b{color:var(--r)}
+
+.grid{display:grid; gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.tile{border:2px solid var(--line); border-radius:16px; padding:12px 14px; break-inside:avoid}
+.tile .emo{font-size:2.1rem; line-height:1.2}
+.tile .ex{margin-top:4px}
+.tile .mean{font-weight:700}
+.tile.pT{background:var(--pt); border-color:transparent}
+.tile.rT{background:var(--rt); border-color:transparent}
+.tile.sT{background:var(--st); border-color:transparent}
+.tile h3{font-size:1rem}
+
+.note{border-radius:14px; padding:10px 14px; margin:14px 0; background:var(--hi); color:var(--ink)}
+.note.soft{background:var(--rt)}
+.ask{font-weight:800}
+
+/* 对比 */
+.vs{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+@media (max-width:640px){.vs{grid-template-columns:1fr}}
+.vs > div{border-radius:16px; padding:14px; text-align:center}
+.vs .old{background:var(--bad)} .vs .new{background:var(--good)}
+.vs h3{font-size:1rem; margin-bottom:6px}
+
+/* 家族 */
+.fam{border:2px solid var(--line); border-radius:18px; padding:14px 16px; break-inside:avoid}
+.fam h3{font-size:1.05rem; margin-bottom:6px}
+.fam .core{font-size:.95rem; color:var(--muted); margin-bottom:6px}
+.frow{display:flex; align-items:center; gap:10px; flex-wrap:wrap; padding:5px 0; border-top:1px dashed var(--line)}
+.frow:first-of-type{border-top:0}
+.frow .mean{color:var(--ink); font-weight:600}
+.frow .tag{font-size:.8rem; padding:1px 8px; border-radius:999px; background:var(--line); color:var(--muted); font-weight:700}
+
+/* 双胞胎 */
+.twins{display:grid; grid-template-columns:1fr 1fr; gap:0; border:2px solid var(--line); border-radius:18px; overflow:hidden; margin:14px 0; break-inside:avoid}
+.twins > div{padding:14px 16px}
+.twins > div + div{border-left:2px dashed var(--line)}
+.twins .cap{grid-column:1 / -1; background:var(--rt); padding:8px 16px; font-weight:800; border-bottom:2px solid var(--line)}
+@media (max-width:640px){.twins{grid-template-columns:1fr}.twins > div + div{border-left:0; border-top:2px dashed var(--line)}}
+.df{background:var(--hi); border-radius:4px; padding:0 2px}
+.twins .word{font-size:1.6rem}
+.twins .sent{color:var(--muted); font-size:.95rem}
+
+/* 多义 */
+.tree{display:grid; grid-template-columns:1fr; gap:10px; text-align:center}
+.tree .top{justify-self:center}
+.tree .branches{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+@media (max-width:640px){.tree .branches{grid-template-columns:1fr}}
+.tree .arrow{font-size:1.4rem; color:var(--muted); line-height:1}
+.tree .leaf{border:2px solid var(--line); border-radius:16px; padding:12px; background:var(--st)}
+
+/* 七步 */
+.steps{list-style:none; margin:14px 0; padding:0; display:grid; gap:10px}
+.steps li{display:grid; grid-template-columns:54px 1fr; gap:12px; align-items:start; border:2px solid var(--line); border-radius:16px; padding:10px 14px; break-inside:avoid}
+.steps .n{width:46px; height:46px; border-radius:12px; display:grid; place-items:center; font-size:1.5rem; background:var(--rt)}
+.steps li.cover-step{background:var(--hi); border-color:transparent}
+.steps b{font-size:1.05rem}
+.steps .demo{color:var(--muted); font-size:.95rem}
+.rules{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+@media (max-width:640px){.rules{grid-template-columns:1fr}}
+.rules > div{border-radius:16px; padding:12px 16px}
+.rules .no{background:var(--bad)} .rules .yes{background:var(--good)}
+.rules ul{margin:.2em 0; padding-left:1.2em}
+
+/* 打卡 */
+.timeline{display:flex; justify-content:space-between; gap:6px; flex-wrap:wrap; margin:14px 0}
+.timeline > div{flex:1; min-width:96px; text-align:center; border-radius:14px; padding:8px 6px; background:var(--st)}
+.timeline b{display:block}
+.timeline small{color:var(--muted)}
+table.chk{width:100%; border-collapse:collapse; margin-top:10px}
+table.chk th, table.chk td{border:2px solid var(--line); padding:8px 6px; text-align:center}
+table.chk th{background:var(--rt); font-size:.95rem}
+table.chk td:first-child{width:30%; height:44px}
+table.fix{width:100%; border-collapse:collapse; margin-top:8px}
+table.fix th, table.fix td{border:2px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top}
+table.fix th{background:var(--rt)}
+.tbl-scroll{overflow-x:auto}
+
+/* 试一试 */
+.try{border:2px dashed var(--r); border-radius:18px; padding:14px 18px; margin-top:20px; break-inside:avoid}
+.try h3{font-size:1.1rem; color:var(--r); margin-bottom:4px}
+.try ol{margin:.3em 0; padding-left:1.4em}
+.try li{margin:.35em 0}
+.line{display:inline-block; min-width:5em; border-bottom:2px solid var(--ink); height:1.1em; vertical-align:baseline}
+details.ans{margin-top:8px}
+details.ans summary{cursor:pointer; display:inline-block; padding:4px 14px; border-radius:999px; background:var(--r); color:#fff; font-weight:700; font-size:.92rem; list-style:none}
+details.ans summary::-webkit-details-marker{display:none}
+details.ans summary:focus-visible, .fc:focus-visible, .ctl button:focus-visible{outline:3px solid var(--hi); outline-offset:2px}
+details.ans[open] summary{background:var(--muted)}
+details.ans .a{margin-top:8px; background:var(--good); border-radius:12px; padding:8px 14px}
+details.ans .a ol{margin:.2em 0; padding-left:1.4em}
+
+/* 词卡 */
+.ctl{display:flex; gap:10px; flex-wrap:wrap; margin:10px 0 16px}
+.ctl button{font:inherit; font-weight:700; border:0; border-radius:999px; padding:6px 18px; background:var(--r); color:#fff; cursor:pointer}
+.ctl button.alt{background:var(--line); color:var(--ink)}
+.cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px}
+.fc{
+  font:inherit; color:inherit; text-align:center; cursor:pointer; background:var(--paper);
+  border:2px solid var(--line); border-radius:16px; padding:10px 10px 12px; break-inside:avoid; min-height:150px;
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:2px;
+}
+.fc .no{align-self:flex-start; font-size:.78rem; color:var(--muted)}
+.fc .emo{font-size:2.3rem; line-height:1.15}
+.fc .w{font-size:1.25rem}
+.fc .back{display:none; width:100%; margin-top:6px; padding-top:6px; border-top:2px dashed var(--line)}
+.fc .back .mean{font-weight:800}
+.fc .back .tip{font-size:.85rem; color:var(--muted); line-height:1.5}
+.fc .hint{font-size:.8rem; color:var(--muted); margin-top:auto}
+.fc.on{background:var(--rt)}
+.fc.on .back{display:block}
+.fc.on .hint{display:none}
+.fc .back .blk{font-size:.95rem}
+.group-h{margin:22px 0 8px; font-size:1.1rem}
+
+.foot{text-align:center; color:var(--muted); font-size:.9rem; margin-top:30px}
+
+/* 打印 */
+@page{size:A4; margin:12mm}
+@media print{
+  body{background:#fff; color:#000; font-size:14px}
+  :root{--bg:#fff; --paper:#fff}
+  .wrap{max-width:none; padding:0}
+  .level{border-radius:0; page-break-before:always; margin:0; border:0; padding:0}
+  .cover{page-break-after:always}
+  .ctl{display:none}
+  .fc .back{display:block}
+  .fc .hint{display:none}
+  .fc{min-height:0}
+  .blk,.lv-no,.say .av{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  details.ans:not([open]){display:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .fc{transition:background .15s}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ================= 封面 ================= -->
+<header class="cover">
+  <h1>单词拆拆拆</h1>
+  <p class="sub">五年级词义识记 图文教材　把单词拆成积木，学一个会一串</p>
+
+  <div class="hero big">
+    <span class="bx" data-b="un.p+believe.r+able.s"></span>
+    <div class="under"><span class="a">不</span><span class="b">相信</span><span class="c">能……的</span></div>
+    <div class="result">难以置信的 🤯</div>
+  </div>
+
+  <div class="legend">
+    <div class="lg p"><span class="blk p">词头</span> <b>放在最前面</b><small>管方向：不、再、提前、向外……（课本里叫“前缀”）</small></div>
+    <div class="lg r"><span class="blk r">词心</span> <b>藏在中间</b><small>管核心意思：相信、搬运、行走……（课本里叫“词根”）</small></div>
+    <div class="lg s"><span class="blk s">词尾</span> <b>戴在最后</b><small>管词性：名词、形容词、动词、副词（课本里叫“后缀”）</small></div>
+  </div>
+
+  <div class="how">
+    <div>
+      <h3>🧭 同学怎么用这本书</h3>
+      <ul>
+        <li>一关一关往下走，每关约 15～20 分钟。</li>
+        <li>每关最后有“试一试”，先自己想，再点“看答案”。</li>
+        <li>记单词的口诀：<b>拆 → 猜 → 盖 → 想</b>。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>👨‍👩‍👧 家长和老师怎么带</h3>
+      <ul>
+        <li>先让孩子开口说，再给答案；不要直接报中文翻译。</li>
+        <li>孩子错了，先问“是哪一块积木认错了？”</li>
+        <li>词卡在最后，可单面打印裁开，正面单词、背面讲解。</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- ================= 第1关 ================= -->
+<section class="level">
+  <div class="lv-head"><div class="lv-no">第1关</div><h2>单词是积木搭的<span class="goal">目标：看到长单词不害怕，会先“拆”一拆</span></h2></div>
+
+  <div class="say"><div class="av">🔧</div><div class="bubble">我是小拆工程师！<b>长单词不用一个字母一个字母背</b>，它其实是几块小积木拼起来的。</div></div>
+
+  <div class="vs">
+    <div class="old">
+      <h3>❌ 老办法：一个字母一个字母背</h3>
+      <div><span class="gray">u</span><span class="gray">n</span><span class="gray">b</span><span class="gray">e</span><span class="gray">l</span><span class="gray">i</span><span class="gray">e</span><span class="gray">v</span><span class="gray">a</span><span class="gray">b</span><span class="gray">l</span><span class="gray">e</span></div>
+      <p><b>12 个小方块</b>，又多又散，很容易忘。</p>
+    </div>
+    <div class="new">
+      <h3>✅ 新办法：拆成三块积木</h3>
+      <div class="mid"><span class="bx" data-b="un.p+believe.r+able.s"></span></div>
+      <p><b>只要记 3 块</b>，每一块都认识。</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:18px">看到长单词，先问自己三个问题</h3>
+  <div class="grid g3" style="margin-top:8px">
+    <div class="tile pT"><div class="emo">👈</div><b>1. 最前面有词头吗？</b><div class="muted">比如 un、re、pre</div></div>
+    <div class="tile sT"><div class="emo">👉</div><b>2. 最后面有词尾吗？</b><div class="muted">比如 -able、-ful、-ly</div></div>
+    <div class="tile rT"><div class="emo">🎯</div><b>3. 中间剩下的认识吗？</b><div class="muted">那就是词心，核心意思</div></div>
+  </div>
+
+  <div class="try">
+    <h3>✏️ 试一试</h3>
+    <ol>
+      <li>unhappy 可以拆成 <span class="line"></span> + <span class="line"></span>，其中词头是 <span class="line"></span>。</li>
+      <li>数一数：happy 在 unhappy 里是第几块积木？</li>
+    </ol>
+    <details class="ans"><summary>看答案</summary><div class="a">1. un + happy，词头是 un。 2. 第 2 块（词心）。</div></details>
+  </div>
+</section>
+
+<!-- ================= 第2关 ================= -->
+<section class="level">
+  <div class="lv-head"><div class="lv-no" style="background:var(--p)">第2关</div><h2>词头：给单词指方向<span class="goal">目标：认识 9 组常见词头，看到就知道“往哪走”</span></h2></div>
+
+  <div class="say"><div class="av">🔧</div><div class="bubble">词头站在最前面，像路牌：<b>不、再、提前、向外……</b>路牌一变，单词的意思就跟着变。</div></div>
+
+  <div class="grid g3">
+    <div class="tile pT"><div class="emo">😢</div><span class="blk p">un-</span><b> 不</b><div class="ex bx" data-b="un.p+happy.r"></div><div class="mean">不开心的</div></div>
+    <div class="tile pT"><div class="emo">✍️</div><span class="blk p">re-</span><b> 再一次</b><div class="ex bx" data-b="re.p+write.r"></div><div class="mean">重写</div></div>
+    <div class="tile pT"><div class="emo">👀</div><span class="blk p">pre-</span><b> 提前</b><div class="ex bx" data-b="pre.p+view.r"></div><div class="mean">预习、预览</div></div>
+    <div class="tile pT"><div class="emo">💨</div><span class="blk p">dis-</span><b> 不、去掉</b><div class="ex bx" data-b="dis.p+appear.r"></div><div class="mean">消失</div></div>
+    <div class="tile pT"><div class="emo">🚪</div><span class="blk p">ex-</span><b> 向外</b><div class="ex bx" data-b="ex.p+it.r"></div><div class="mean">出口</div></div>
+    <div class="tile pT"><div class="emo">🚶</div><span class="blk p">pro-</span><b> 向前</b><div class="ex bx" data-b="pro.p+gress.r"></div><div class="mean">前进、进步</div></div>
+    <div class="tile pT"><div class="emo">🔗</div><span class="blk p">con-</span><b> 一起</b><div class="ex bx" data-b="con.p+nect.r"></div><div class="mean">连接</div></div>
+    <div class="tile pT"><div class="emo">🧩</div><span class="blk p">com-</span><b> 一起</b><div class="ex bx" data-b="com.p+bine.r"></div><div class="mean">结合</div></div>
+    <div class="tile pT"><div class="emo">🚚</div><span class="blk p">trans-</span><b> 跨过去</b><div class="ex bx" data-b="trans.p+port.r"></div><div class="mean">运输</div></div>
+  </div>
+
+  <h3 style="margin-top:22px">“不”的四兄弟：un- in- im- ir-</h3>
+  <p>它们意思一样，都是<b>“不”</b>。就像变色龙，<b>看后面的字母来换颜色</b>：</p>
+  <div class="grid g4">
+    <div class="tile"><span class="bx" data-b="un.p+happy.r"></span><div class="muted">常规款，先想 un-</div></div>
+    <div class="tile"><span class="bx" data-b="in.p+correct.r"></span><div class="muted">不正确的</div></div>
+    <div class="tile"><span class="bx" data-b="im.p+possible.r"></span><div class="muted">p 前面用 im-（不可能的）</div></div>
+    <div class="tile"><span class="bx" data-b="ir.p+regular.r"></span><div class="muted">r 前面用 ir-（不规则的）</div></div>
+  </div>
+
+  <div class="note">🔎 <b>发现规律：</b>re- 有“回”的意思，所以 <b class="en">return</b> = re（回）+ turn（转）= 转回去 = 返回、归还。</div>
+
+  <div class="try">
+    <h3>✏️ 试一试</h3>
+    <ol>
+      <li>un + kind = <span class="line"></span></li>
+      <li>re + read = <span class="line"></span></li>
+      <li>pre + school = <span class="line"></span></li>
+      <li>im 和 ir，哪个放在 possible 前面？</li>
+    </ol>
+    <details class="ans"><summary>看答案</summary><div class="a"><ol><li>unkind 不友好的</li><li>reread 再读一遍</li><li>preschool 上学之前的（学前的）</li><li>im（p 前面用 im-）：impossible</li></ol></div></details>
+  </div>
+</section>
+
+<!-- ================= 第3关 ================= -->
+<section class="level">
+  <div class="lv-head"><div class="lv-no" style="background:var(--s)">第3关</div><h2>词尾：给单词戴帽子<span class="goal">目标：看词尾，就知道是名词、形容词、动词还是副词</span></h2></div>
+
+  <div class="say"><div class="av">🔧</div><div class="bubble">词尾像帽子，<b>戴什么帽子，单词就变成什么“身份”</b>。先记住四种身份：</div></div>
+
+  <div class="grid g4">
+    <div class="tile"><div class="emo">📦</div><b>名词</b><div class="muted">东西、状态、结果</div></div>
+    <div class="tile"><div class="emo">🎨</div><b>形容词</b><div class="muted">描述“什么样的”</div></div>
+    <div class="tile"><div class="emo">🏃</div><b>动词</b><div class="muted">做动作</div></div>
+    <div class="tile"><div class="emo">🐢</div><b>副词</b><div class="muted">怎么做的</div></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:16px">
+    <div class="tile sT">
+      <h3>📦 名词帽子：-tion -sion -ment -ness -ity</h3>
+      <div class="ex"><span class="bx" data-b="agree.r+ment.s"></span> 协议</div>
+      <div class="ex"><span class="bx" data-b="happi.r+ness.s"></span> 幸福</div>
+      <div class="ex"><span class="bx" data-b="real.r+ity.s"></span> 现实</div>
+      <div class="ex"><span class="bx" data-b="e.p+duc.r+ation.s"></span> 教育</div>
+    </div>
+    <div class="tile sT">
+      <h3>🎨 形容词帽子：-able -ive -ful -less -ous</h3>
+      <div class="ex"><span class="bx" data-b="help.r+ful.s"></span> 有帮助的（ful = 满满的）</div>
+      <div class="ex"><span class="bx" data-b="hope.r+less.s"></span> 无望的（less = 没有）</div>
+      <div class="ex"><span class="bx" data-b="danger.r+ous.s"></span> 危险的</div>
+      <div class="ex"><span class="bx" data-b="act.r+ive.s"></span> 积极的</div>
+    </div>
+    <div class="tile sT">
+      <h3>🏃 动词帽子：-ate -ify -ise</h3>
+      <div class="ex"><span class="bx" data-b="activ.r+ate.s"></span> 激活</div>
+      <div class="ex"><span class="bx" data-b="simpl.r+ify.s"></span> 简化</div>
+      <div class="ex"><span class="bx" data-b="organ.r+ise.s"></span> 组织</div>
+    </div>
+    <div class="tile sT">
+      <h3>🐢 副词帽子：-ly</h3>
+      <div class="ex"><span class="bx" data-b="happi.r+ly.s"></span> 开心地</div>
+      <p class="muted" style="margin-top:6px">结尾是 y 的词，常常先把 y 变成 i，再戴帽子：happy → happi + ly。</p>
+    </div>
+  </div>
+
+  <div class="note soft">💡 同一个词心，换不同的帽子：<b class="en">help → helpful</b>（有帮助的）　<b class="en">hope → hopeless</b>（无望的）</div>
+
+  <div class="try">
+    <h3>✏️ 试一试</h3>
+    <ol>
+      <li>care + less = <span class="line"></span>（是什么词性？）</li>
+      <li>kind + ness = <span class="line"></span>（是什么词性？）</li>
+      <li>quick + ly = <span class="line"></span>（是什么词性？）</li>
+    </ol>
+    <details class="ans"><summary>看答案</summary><div class="a"><ol><li>careless 不小心的，形容词</li><li>kindness 善良，名词</li><li>quickly 快速地，副词</li></ol></div></details>
+  </div>
+</section>
+
+<!-- ================= 第4关 ================= -->
+<section class="level">
+  <div class="lv-head"><div class="lv-no">第4关</div><h2>单词家族：学一个，带一串<span class="goal">目标：抓住词心，一次记住一整个家族</span></h2></div>
+
+  <div class="say"><div class="av">🔧</div><div class="bubble">同一个词心生出的单词是<b>一家人</b>。别一个一个单独背，<b>一家人打包一起记</b>！</div></div>
+
+  <div class="grid g2">
+    <div class="fam">
+      <h3>💭 believe 家族</h3>
+      <div class="core">词心 lieve / lief ＝ 相信</div>
+      <div class="frow"><span class="bx" data-b="be.p+lieve.r"></span><span class="tag">动词</span><span class="mean">相信</span></div>
+      <div class="frow"><span class="bx" data-b="be.p+lief.r"></span><span class="tag">名词</span><span class="mean">信念（ve 变 f）</span></div>
+      <div class="frow"><span class="bx" data-b="believe.r+able.s"></span><span class="tag">形容词</span><span class="mean">可信的</span></div>
+      <div class="frow"><span class="bx" data-b="un.p+believe.r+able.s"></span><span class="tag">形容词</span><span class="mean">难以置信的</span></div>
+    </div>
+
+    <div class="fam">
+      <h3>😊 happy 家族</h3>
+      <div class="core">词心 happy ＝ 开心</div>
+      <div class="frow"><span class="bx" data-b="happy.r"></span><span class="tag">形容词</span><span class="mean">开心的</span></div>
+      <div class="frow"><span class="bx" data-b="un.p+happy.r"></span><span class="tag">形容词</span><span class="mean">不开心的</span></div>
+      <div class="frow"><span class="bx" data-b="happi.r+ness.s"></span><span class="tag">名词</span><span class="mean">幸福</span></div>
+      <div class="frow"><span class="bx" data-b="happi.r+ly.s"></span><span class="tag">副词</span><span class="mean">开心地</span></div>
+    </div>
+
+    <div class="fam">
+      <h3>🚚 port 家族</h3>
+      <div class="core">词心 port ＝ 搬运</div>
+      <div class="frow"><span class="bx" data-b="trans.p+port.r"></span><span class="tag">动词</span><span class="mean">运输（跨过去搬）</span></div>
+      <div class="frow"><span class="bx" data-b="trans.p+port.r+ation.s"></span><span class="tag">名词</span><span class="mean">运输、交通</span></div>
+      <div class="frow"><span class="bx" data-b="ex.p+port.r"></span><span class="tag">挑战</span><span class="mean">搬出去 = 出口</span></div>
+      <div class="frow"><span class="bx" data-b="im.p+port.r"></span><span class="tag">挑战</span><span class="mean">搬进来 = 进口</span></div>
+    </div>
+
+    <div class="fam">
+      <h3>🏃 act 家族</h3>
+      <div class="core">词心 act ＝ 行动</div>
+      <div class="frow"><span class="bx" data-b="act.r+ive.s"></span><span class="tag">形容词</span><span class="mean">积极的、活跃的</span></div>
+      <div class="frow"><span class="bx" data-b="activ.r+ate.s"></span><span class="tag">动词</span><span class="mean">激活（使活跃）</span></div>
+      <p class="muted" style="margin:6px 0 0">active 去掉 e，再加 -ate。</p>
+    </div>
+  </div>
+
+  <div class="note">🌳 <b>家族口诀：</b>词心不变，意思围着它转；换词头改方向，换词尾改身份。</div>
+
+  <div class="try">
+    <h3>✏️ 试一试</h3>
+    <ol>
+      <li>believe 的名词是 <span class="line"></span>，形容词是 <span class="line"></span>。</li>
+      <li>happy 的反义词是 <span class="line"></span>，副词是 <span class="line"></span>。</li>
+      <li>act → <span class="line"></span>（积极的）→ <span class="line"></span>（激活）</li>
+    </ol>
+    <details class="ans"><summary>看答案</summary><div class="a"><ol><li>belief；believable</li><li>unhappy；happily</li><li>active；activate</li></ol></div></details>
+  </div>
+</section>
+
+<!-- ================= 第5关 ================= -->
+<section class="level">
+  <div class="lv-head"><div class="lv-no" style="background:var(--p)">第5关</div><h2>双胞胎侦探<span class="goal">目标：分清三对最容易混的“双胞胎”单词</span></h2></div>
+
+  <div class="say"><div class="av">🔧</div><div class="bubble">长得像的单词最容易认错。别怕，<b>找到它们不一样的那一块</b>，就能一眼分清。</div></div>
+
+  <div class="twins">
+    <div class="cap">侦探案件 1：词心不同</div>
+    <div>
+      <div class="word"><span class="bx" data-b="ad.p+apt.r"></span></div>
+      <p><b>apt = 贴合</b>　贴合新环境 → <b>适应；改编</b>（v.）</p>
+      <p class="sent">The frog can <b>adapt</b> to cold weather. 🦎</p>
+    </div>
+    <div>
+      <div class="word"><span class="bx" data-b="ad.p+opt.r"></span></div>
+      <p><b>opt = 选择</b>　选中它 → <b>采纳；收养</b>（v.）</p>
+      <p class="sent">We <b>adopted</b> a puppy. 🐶</p>
+    </div>
+  </div>
+
+  <div class="twins">
+    <div class="cap">侦探案件 2：数节拍</div>
+    <div>
+      <div class="word en">qui·et</div>
+      <p>读<b>两拍</b> 🥁🥁　<b>安静的</b>（adj.）</p>
+      <p class="sent">Please be <b>quiet</b>. 🤫</p>
+    </div>
+    <div>
+      <div class="word en">quite</div>
+      <p>读<b>一拍</b> 🥁　<b>相当、很</b>（adv.）</p>
+      <p class="sent">It is <b>quite</b> cold today. 🥶</p>
+    </div>
+  </div>
+
+  <div class="twins">
+    <div class="cap">侦探案件 3：看开头字母</div>
+    <div>
+      <div class="word en"><span class="df">a</span>ffect</div>
+      <p><b>A = Action 动作</b>　<b>影响</b>（动词）</p>
+      <p class="sent">Rain can <b>affect</b> our plan. 🌧️</p>
+    </div>
+    <div>
+      <div class="word en"><span class="df">e</span>ffect</div>
+      <p><b>E = End 结果</b>　<b>效果、结果</b>（名词）</p>
+      <p class="sent">The medicine had a good <b>effect</b>. 🎯</p>
+    </div>
+  </div>
+
+  <div class="note soft">🕵️ 小提醒：这三个“侦探口诀”是帮你先入门的好办法。以后遇到更复杂的用法，再继续补充。</div>
+
+  <div class="try">
+    <h3>✏️ 试一试　选一选</h3>
+    <ol>
+      <li>The library is very ______ . (quiet / quite)</li>
+      <li>Sleep can ______ your mood. (affect / effect)</li>
+      <li>Our family ______ a cat last week. (adapted / adopted)</li>
+      <li>The new rule had a big ______ . (affect / effect)</li>
+    </ol>
+    <details class="ans"><summary>看答案</summary><div class="a"><ol><li>quiet（安静）</li><li>affect（动词，影响）</li><li>adopted（收养）</li><li>effect（名词，效果）</li></ol></div></details>
+  </div>
+</section>
+
+<!-- ================= 第6关 ================= -->
+<section class="level">
+  <div class="lv-head"><div class="lv-no">第6关</div><h2>一个词，好几个意思<span class="goal">目标：先记“本义”，其他意思自己长出来</span></h2></div>
+
+  <div class="say"><div class="av">🔧</div><div class="bubble">一个单词有好几个中文意思，别一口气全背。<b>先记最核心的“本义”</b>，别的意思都是从它长出来的。</div></div>
+
+  <div class="tree">
+    <div class="top mid"><span class="bx" data-b="ad.p+apt.r"></span><div class="muted">本义：向着 + 贴合 ＝ <b>贴上去</b></div></div>
+    <div class="arrow">↓ ↓</div>
+    <div class="branches">
+      <div class="leaf"><div style="font-size:2rem">🦎🌵</div><b>适应</b><p>人或动物“贴合”新环境</p><p class="sent muted en" style="font-weight:500">The frog adapts to the desert.</p></div>
+      <div class="leaf"><div style="font-size:2rem">📖➡️🎭</div><b>改编</b><p>把故事“贴合”新的舞台</p><p class="sent muted en" style="font-weight:500">He adapted the book into a play.</p></div>
+    </div>
+  </div>
+
+  <div class="note">🌱 <b>再看一个：</b><span class="bx" data-b="ex.p+press.r"></span> ex（向外）+ press（压）＝把想法<b>压出来</b> ＝ <b>表达</b>。</div>
+
+  <div class="try">
+    <h3>✏️ 试一试</h3>
+    <ol>
+      <li>“She <b>adapted</b> quickly to her new school.” 这里 adapt 是什么意思？</li>
+      <li>“The movie was <b>adapted</b> from a comic book.” 这里呢？</li>
+    </ol>
+    <details class="ans"><summary>看答案</summary><div class="a"><ol><li>适应（贴合新学校）</li><li>改编（把漫画贴合成电影）</li></ol></div></details>
+  </div>
+</section>
+
+<!-- ================= 第7关 ================= -->
+<section class="level">
+  <div class="lv-head"><div class="lv-no" style="background:var(--s)">第7关</div><h2>记忆魔法：盖住再想<span class="goal">目标：用“七步法”把单词真正记进脑子里</span></h2></div>
+
+  <div class="say"><div class="av">🔧</div><div class="bubble">光盯着看，很快就忘。<b>盖住书、自己想出来</b>，才是最有效的记法。我们用 <span class="blk r">unbelievable</span> 来演示。</div></div>
+
+  <ol class="steps">
+    <li><div class="n">🔧</div><div><b>第1步　拆：</b>大声说出“词头 + 词心 + 词尾”。<div class="demo">un ＋ believe ＋ able</div></div></li>
+    <li><div class="n">🧮</div><div><b>第2步　猜：</b>每块什么意思？自己拼出整个词的意思。<div class="demo">不 ＋ 相信 ＋ 能……的 ＝ 难以置信的</div></div></li>
+    <li><div class="n">🗣️</div><div><b>第3步　读：</b>读一读每块，再读整个词，再说意思。眼睛、耳朵、嘴巴一起用。<div class="demo">un… believe… able… unbelievable！难以置信！</div></div></li>
+    <li class="cover-step"><div class="n">🙈</div><div><b>第4步　盖：</b>把书、卡片<b>全部盖住</b>，不许偷看！</div></li>
+    <li class="cover-step"><div class="n">🧠</div><div><b>第5步　想：</b>两种方式各来一遍。<div class="demo">① 听老师读 → 想意思 → 写单词　② 看中文 → 想结构 → 写单词</div></div></li>
+    <li><div class="n">🧺</div><div><b>第6步　串：</b>把同一家族的词一起复习一遍。<div class="demo">believe → belief → believable → unbelievable</div></div></li>
+    <li><div class="n">📅</div><div><b>第7步　打卡：</b>写进“复习打卡表”，按时再想一次（见第 9 关）。</div></li>
+  </ol>
+
+  <div class="rules">
+    <div class="no"><b>❌ 不推荐</b><ul><li>只盯着单词反复看</li><li>只跟着读，不自己想</li><li>一次背一堆，不复习</li></ul></div>
+    <div class="yes"><b>✅ 推荐</b><ul><li>看一眼，盖住，自己想</li><li>想不起来就再看，再盖</li><li>隔一段时间再想一次</li></ul></div>
+  </div>
+
+  <div class="try">
+    <h3>✏️ 试一试　用七步法学 transportation</h3>
+    <ol>
+      <li>拆：<span class="line"></span> + <span class="line"></span> + <span class="line"></span></li>
+      <li>猜：跨过去 + 搬运 + 名词帽子 ＝ <span class="line"></span></li>
+      <li>盖住书，默写：<span class="line" style="min-width:9em"></span></li>
+    </ol>
+    <details class="ans"><summary>看答案</summary><div class="a"><ol><li>trans + port + ation</li><li>运输、交通</li><li>transportation</li></ol></div></details>
+  </div>
+</section>
+
+<!-- ================= 第8关 ================= -->
+<section class="level">
+  <div class="lv-head"><div class="lv-no">第8关</div><h2>检修站：错在哪块积木？<span class="goal">目标：写错、记错时，找到“坏掉的那一块”</span></h2></div>
+
+  <div class="say"><div class="av">🔧</div><div class="bubble">写错单词别只是改一遍。先问：<b>是哪块积木出了问题？</b>只修这一块，就不容易再错。</div></div>
+
+  <div class="tbl-scroll">
+  <table class="fix">
+    <tr><th>哪块出了问题</th><th>例子</th><th>怎么修</th></tr>
+    <tr><td>🟧 词头认错</td><td>把 impossible 写成 inpossible</td><td>p 前面用 <b>im-</b></td></tr>
+    <tr><td>🟦 词心意思记错</td><td>把 adopt 当成“适应”</td><td>opt = 选择，选中 → 收养</td></tr>
+    <tr><td>🟩 词尾词性搞混</td><td>把 happiness 当成形容词</td><td>-ness 是名词帽子</td></tr>
+    <tr><td>👯 双胞胎混了</td><td>quiet 和 quite 用反</td><td>quiet 两拍，quite 一拍</td></tr>
+  </table>
+  </div>
+
+  <div class="try">
+    <h3>✏️ 试一试　找出坏掉的积木</h3>
+    <ol>
+      <li>小明写 “The rain will <b>effect</b> our plan.”，错在哪？</li>
+      <li>小红说 hopeless 是“充满希望的”，错在哪块？</li>
+      <li>小刚写 <b>irpossible</b>，错在哪块？</li>
+    </ol>
+    <details class="ans"><summary>看答案</summary><div class="a"><ol><li>双胞胎混了：这里要动词 affect（影响）。</li><li>词尾认错：-less 是“没有”，hopeless = 没有希望。</li><li>词头认错：p 前面用 im-，应是 impossible。</li></ol></div></details>
+  </div>
+</section>
+
+<!-- ================= 第9关 ================= -->
+<section class="level">
+  <div class="lv-head"><div class="lv-no" style="background:var(--s)">第9关</div><h2>复习打卡：别让单词溜走<span class="goal">目标：按时间“叫醒”记忆，把单词记牢</span></h2></div>
+
+  <div class="say"><div class="av">🔧</div><div class="bubble">刚学的单词像小种子，<b>每隔一段时间浇一次水</b>，才能长成大树。浇水的时候，也要<b>盖住书自己想</b>哦！</div></div>
+
+  <div class="timeline">
+    <div><b>🌱 当天</b><small>学完想一次<br>过一会再想一次</small></div>
+    <div><b>🌿 第2天</b><small>短短复习</small></div>
+    <div><b>🌳 第3天</b><small>再想一次</small></div>
+    <div><b>🍎 第7天</b><small>基本记牢</small></div>
+    <div><b>🏆 每月</b><small>整理一轮</small></div>
+  </div>
+
+  <div class="tbl-scroll">
+  <table class="chk">
+    <tr><th>单词</th><th>当天 ☐☐</th><th>第2天</th><th>第3天</th><th>第7天</th><th>本月</th></tr>
+    <tr><td></td><td>☐ ☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+    <tr><td></td><td>☐ ☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+    <tr><td></td><td>☐ ☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+    <tr><td></td><td>☐ ☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+    <tr><td></td><td>☐ ☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+    <tr><td></td><td>☐ ☐</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+  </table>
+  </div>
+  <p class="muted">每想起来一次，就在方格里打 ✔。想不起来也没关系，翻回去看一眼，盖住，再想一次。</p>
+</section>
+
+<!-- ================= 第10关 ================= -->
+<section class="level">
+  <div class="lv-head"><div class="lv-no" style="background:var(--p)">第10关</div><h2>毕业挑战<span class="goal">目标：综合使用所有本领，还能猜没学过的新词</span></h2></div>
+
+  <div class="try" style="margin-top:0">
+    <h3>✏️ 一　拆积木</h3>
+    <ol>
+      <li>unbelievable ＝ <span class="line"></span> + <span class="line"></span> + <span class="line"></span></li>
+      <li>dangerous ＝ <span class="line"></span> + <span class="line"></span></li>
+      <li>disappear ＝ <span class="line"></span> + <span class="line"></span></li>
+      <li>hopeless ＝ <span class="line"></span> + <span class="line"></span></li>
+    </ol>
+  </div>
+  <div class="try">
+    <h3>🔍 二　猜生词（这些词课上没学过！）</h3>
+    <ol>
+      <li>replay ＝ <span class="line"></span></li>
+      <li>unlucky ＝ <span class="line"></span></li>
+      <li>powerful ＝ <span class="line"></span></li>
+      <li>kindness ＝ <span class="line"></span></li>
+    </ol>
+  </div>
+  <div class="try">
+    <h3>🕵️ 三　双胞胎选择</h3>
+    <ol>
+      <li>It is ______ hot today. (quiet / quite)</li>
+      <li>The teacher’s words had a great ______ on me. (affect / effect)</li>
+      <li>Polar bears ______ to the cold. (adapt / adopt)</li>
+    </ol>
+  </div>
+  <details class="ans"><summary>看答案（家长、老师用）</summary><div class="a">
+    <ol>
+      <li><b>一：</b>un + believe + able；danger + ous；dis + appear；hope + less</li>
+      <li><b>二：</b>replay 重玩；unlucky 不幸运的；powerful 强大的；kindness 善良</li>
+      <li><b>三：</b>quite；effect；adapt</li>
+    </ol>
+    <p class="muted">评分参考：能拆对并说出每块意思 → 合格；能自己猜出生词 → 良好；能给别人讲“为什么这样拆” → 优秀。</p>
+  </div></details>
+</section>
+
+<!-- ================= 附录：词卡 ================= -->
+<section class="level" id="cards">
+  <div class="lv-head"><div class="lv-no" style="background:var(--muted)">附录</div><h2>41 张单词卡<span class="goal">点一点卡片翻面；打印时正面单词、背面讲解会一起出现</span></h2></div>
+  <div class="ctl">
+    <button type="button" id="openAll">全部翻开</button>
+    <button type="button" id="closeAll" class="alt">全部盖住（自测用）</button>
+  </div>
+  <div id="cardArea"></div>
+</section>
+
+<p class="foot">单词拆拆拆｜五年级词义识记 · 词头（橙）／词心（蓝）／词尾（绿）</p>
+</div>
+
+<script>
+(function(){
+  // 把 "un.p+believe.r+able.s" 变成彩色积木
+  function build(str){
+    return str.split("+").map(function(part){
+      var i = part.lastIndexOf(".");
+      var t = part.slice(0,i), k = part.slice(i+1);
+      return '<span class="blk '+k+'">'+t+'</span>';
+    }).join("");
+  }
+  document.querySelectorAll("[data-b]").forEach(function(el){
+    el.innerHTML = build(el.getAttribute("data-b"));
+  });
+
+  // 词卡数据：[单词, 表情, 拆分, 释义, 记忆点]
+  var G = [
+    ["同根家族与运输家族", [
+      ["believe","💭","be.p+lieve.r","v. 相信","lieve = 相信，整个家族都围着它转"],
+      ["belief","🌟","be.p+lief.r","n. 信念、看法","动词变名词：ve 变 f"],
+      ["believable","👍","believe.r+able.s","adj. 可信的","-able = 可以……的"],
+      ["unbelievable","🤯","un.p+believe.r+able.s","adj. 难以置信的","不 + 相信 + 能……的，三块标杆词"],
+      ["transport","🚚","trans.p+port.r","v. 运输","trans 跨过去 + port 搬运"],
+      ["transportation","🚇","trans.p+port.r+ation.s","n. 运输、交通","加 -ation，动词变名词"]
+    ]],
+    ["双胞胎侦探", [
+      ["adapt","🦎","ad.p+apt.r","v. 适应、改编","apt = 贴合，贴合环境就是适应"],
+      ["adopt","🐶","ad.p+opt.r","v. 采纳、收养","opt = 选择，选中它就是收养"],
+      ["quiet","🤫","quiet.r","adj. 安静的","读两拍 qui·et"],
+      ["quite","💯","quite.r","adv. 相当、很","读一拍 quite"],
+      ["affect","💓","af.p+fect.r","v. 影响","A = Action 动作"],
+      ["effect","🎯","ef.p+fect.r","n. 效果、结果","E = End 结果"]
+    ]],
+    ["词头卡", [
+      ["unhappy","😢","un.p+happy.r","adj. 不开心的","un- = 不"],
+      ["impossible","🚫","im.p+possible.r","adj. 不可能的","p 前面用 im-"],
+      ["irregular","〰️","ir.p+regular.r","adj. 不规则的","r 前面用 ir-"],
+      ["incorrect","❌","in.p+correct.r","adj. 不正确的","in- = 不"],
+      ["rewrite","✍️","re.p+write.r","v. 重写","re- = 再一次"],
+      ["return","↩️","re.p+turn.r","v. 返回、归还","re- 回 + turn 转"],
+      ["preview","👀","pre.p+view.r","v./n. 预习、预览","pre- = 提前"],
+      ["predict","🔮","pre.p+dict.r","v. 预测","dict = 说，提前说就是预言"],
+      ["progress","🚶","pro.p+gress.r","n./v. 进步、前进","gress = 走，向前走"],
+      ["dislike","👎","dis.p+like.r","v. 不喜欢","dis- = 不、相反"],
+      ["disappear","💨","dis.p+appear.r","v. 消失","dis- 去掉 + 出现"],
+      ["exit","🚪","ex.p+it.r","n. 出口 v. 退出","ex- 向外 + it 走"],
+      ["express","🗣️","ex.p+press.r","v. 表达","把想法向外压出来"],
+      ["connect","🔗","con.p+nect.r","v. 连接","con- 一起 + nect 连"],
+      ["combine","🧩","com.p+bine.r","v. 结合、合并","com- 一起 + bine 捆"]
+    ]],
+    ["名词词尾卡", [
+      ["education","🎓","e.p+duc.r+ation.s","n. 教育","duc = 引导"],
+      ["decision","⚖️","de.p+cis.r+sion.s","n. 决定","cis = 切，一刀切下去就是决定"],
+      ["agreement","🤝","agree.r+ment.s","n. 同意、协议","-ment 名词帽子"],
+      ["development","🌱","develop.r+ment.s","n. 发展、开发","-ment 名词帽子"],
+      ["happiness","😄","happi.r+ness.s","n. 幸福、快乐","y 变 i，再加 -ness"],
+      ["reality","🌍","real.r+ity.s","n. 现实、真实","-ity 表示性质"]
+    ]],
+    ["形容词词尾卡", [
+      ["active","🏃","act.r+ive.s","adj. 积极的、活跃的","-ive = 有……属性的"],
+      ["helpful","🤗","help.r+ful.s","adj. 有帮助的","-ful = 满满的"],
+      ["hopeless","😞","hope.r+less.s","adj. 无望的","-less = 没有"],
+      ["dangerous","⚠️","danger.r+ous.s","adj. 危险的","-ous = 充满……的"]
+    ]],
+    ["动词与副词词尾卡", [
+      ["activate","🔛","activ.r+ate.s","v. 激活","active 去掉 e，加 -ate"],
+      ["simplify","✂️","simpl.r+ify.s","v. 简化","simple 去掉 e，加 -ify"],
+      ["organise","🗂️","organ.r+ise.s","v. 组织、筹备","-ise = 使……"],
+      ["happily","😊","happi.r+ly.s","adv. 开心地","y 变 i，再加 -ly"]
+    ]]
+  ];
+
+  var area = document.getElementById("cardArea"), n = 0, html = "";
+  G.forEach(function(g){
+    html += '<h3 class="group-h">'+g[0]+'</h3><div class="cards">';
+    g[1].forEach(function(c){
+      n++;
+      html += '<button type="button" class="fc" aria-pressed="false">'
+        + '<span class="no">'+String(n).padStart(2,"0")+'</span>'
+        + '<span class="emo">'+c[1]+'</span>'
+        + '<span class="w en">'+c[0]+'</span>'
+        + '<span class="hint">点一点看讲解</span>'
+        + '<span class="back">'
+          + '<span class="split">'+build(c[2])+'</span><br>'
+          + '<span class="mean">'+c[3]+'</span><br>'
+          + '<span class="tip">'+c[4]+'</span>'
+        + '</span></button>';
+    });
+    html += '</div>';
+  });
+  area.innerHTML = html;
+
+  function setAll(on){
+    area.querySelectorAll(".fc").forEach(function(b){
+      b.classList.toggle("on", on); b.setAttribute("aria-pressed", on);
+    });
+  }
+  area.addEventListener("click", function(e){
+    var b = e.target.closest(".fc"); if(!b) return;
+    var on = b.classList.toggle("on"); b.setAttribute("aria-pressed", on);
+  });
+  document.getElementById("openAll").addEventListener("click", function(){ setAll(true); });
+  document.getElementById("closeAll").addEventListener("click", function(){ setAll(false); });
+})();
+</script>
+</body>
+</html>
