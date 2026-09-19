@@ -58,6 +58,12 @@ def collect_phrases() -> dict[str, str]:
     for word in vocab["words"]:
         add(word.get("tts") or word["en"])
         add(word["en"])
+        for block in word.get("blocks") or []:
+            add(str(block.get("text") or ""))
+        syllables = word.get("syllables") or []
+        if len(syllables) > 1 and not word.get("blocks"):
+            for piece in syllables:
+                add(str(piece))
 
     levels = json.loads(LEVELS.read_text(encoding="utf-8"))
     for level in levels["levels"]:

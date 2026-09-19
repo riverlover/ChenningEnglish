@@ -6,6 +6,22 @@
   "assetBase": "assets/audio",
   "remoteBaseUrl": null,
   "clips": {
+    "a": {
+      "text": "a",
+      "file": "en-us/a.mp3"
+    },
+    "able": {
+      "text": "able",
+      "file": "en-us/able.mp3"
+    },
+    "ac": {
+      "text": "ac",
+      "file": "en-us/ac.mp3"
+    },
+    "af": {
+      "text": "Af",
+      "file": "en-us/af.mp3"
+    },
     "africa": {
       "text": "Africa",
       "file": "en-us/africa.mp3"
@@ -14,17 +30,37 @@
       "text": "age",
       "file": "en-us/age.mp3"
     },
+    "al": {
+      "text": "al",
+      "file": "en-us/al.mp3"
+    },
     "all": {
       "text": "all",
       "file": "en-us/all.mp3"
+    },
+    "amaz": {
+      "text": "amaz",
+      "file": "en-us/amaz.mp3"
     },
     "amazing": {
       "text": "amazing",
       "file": "en-us/amazing.mp3"
     },
+    "america": {
+      "text": "America",
+      "file": "en-us/america.mp3"
+    },
+    "an": {
+      "text": "an",
+      "file": "en-us/an.mp3"
+    },
     "ancient": {
       "text": "ancient",
       "file": "en-us/ancient.mp3"
+    },
+    "ant": {
+      "text": "ant",
+      "file": "en-us/ant.mp3"
     },
     "antarctica": {
       "text": "Antarctica",
@@ -34,6 +70,10 @@
       "text": "any",
       "file": "en-us/any.mp3"
     },
+    "arc": {
+      "text": "arc",
+      "file": "en-us/arc.mp3"
+    },
     "asia": {
       "text": "Asia",
       "file": "en-us/asia.mp3"
@@ -42,6 +82,10 @@
       "text": "ask",
       "file": "en-us/ask.mp3"
     },
+    "aus": {
+      "text": "Aus",
+      "file": "en-us/aus.mp3"
+    },
     "australia": {
       "text": "Australia",
       "file": "en-us/australia.mp3"
@@ -49,6 +93,14 @@
     "australian": {
       "text": "Australian",
       "file": "en-us/australian.mp3"
+    },
+    "autumn": {
+      "text": "Autumn",
+      "file": "en-us/autumn.mp3"
+    },
+    "bad": {
+      "text": "bad",
+      "file": "en-us/bad.mp3"
     },
     "badminton": {
       "text": "badminton",
@@ -66,9 +118,21 @@
       "text": "bank",
       "file": "en-us/bank.mp3"
     },
+    "be": {
+      "text": "be",
+      "file": "en-us/be.mp3"
+    },
     "before": {
       "text": "before",
       "file": "en-us/before.mp3"
+    },
+    "ben": {
+      "text": "Ben",
+      "file": "en-us/ben.mp3"
+    },
+    "big": {
+      "text": "Big",
+      "file": "en-us/big.mp3"
     },
     "big_ben": {
       "text": "Big Ben",
@@ -78,9 +142,25 @@
       "text": "bike",
       "file": "en-us/bike.mp3"
     },
+    "bish": {
+      "text": "bish",
+      "file": "en-us/bish.mp3"
+    },
+    "ble": {
+      "text": "ble",
+      "file": "en-us/ble.mp3"
+    },
+    "brit": {
+      "text": "Brit",
+      "file": "en-us/brit.mp3"
+    },
     "british": {
       "text": "British",
       "file": "en-us/british.mp3"
+    },
+    "bus": {
+      "text": "bus",
+      "file": "en-us/bus.mp3"
     },
     "busy": {
       "text": "busy",
@@ -90,9 +170,21 @@
       "text": "by",
       "file": "en-us/by.mp3"
     },
+    "ca": {
+      "text": "ca",
+      "file": "en-us/ca.mp3"
+    },
     "cake": {
       "text": "cake",
       "file": "en-us/cake.mp3"
+    },
+    "cal": {
+      "text": "cal",
+      "file": "en-us/cal.mp3"
+    },
+    "calendar": {
+      "text": "calendar",
+      "file": "en-us/calendar.mp3"
     },
     "calligraphy": {
       "text": "calligraphy",
@@ -102,9 +194,17 @@
       "text": "camp",
       "file": "en-us/camp.mp3"
     },
+    "canada": {
+      "text": "Canada",
+      "file": "en-us/canada.mp3"
+    },
     "canadian": {
       "text": "Canadian",
       "file": "en-us/canadian.mp3"
+    },
+    "cap": {
+      "text": "cap",
+      "file": "en-us/cap.mp3"
     },
     "capital": {
       "text": "capital",
@@ -122,9 +222,21 @@
       "text": "careful",
       "file": "en-us/careful.mp3"
     },
+    "ce": {
+      "text": "ce",
+      "file": "en-us/ce.mp3"
+    },
+    "char": {
+      "text": "char",
+      "file": "en-us/char.mp3"
+    },
     "character": {
       "text": "character",
       "file": "en-us/character.mp3"
+    },
+    "chi": {
+      "text": "Chi",
+      "file": "en-us/chi.mp3"
     },
     "china": {
       "text": "China",
@@ -134,6 +246,18 @@
       "text": "choice",
       "file": "en-us/choice.mp3"
     },
+    "ci": {
+      "text": "ci",
+      "file": "en-us/ci.mp3"
+    },
+    "cient": {
+      "text": "cient",
+      "file": "en-us/cient.mp3"
+    },
+    "cious": {
+      "text": "cious",
+      "file": "en-us/cious.mp3"
+    },
     "city": {
       "text": "city",
       "file": "en-us/city.mp3"
@@ -142,9 +266,17 @@
       "text": "clock",
       "file": "en-us/clock.mp3"
     },
+    "con": {
+      "text": "con",
+      "file": "en-us/con.mp3"
+    },
     "convenient": {
       "text": "convenient",
       "file": "en-us/convenient.mp3"
+    },
+    "coun": {
+      "text": "coun",
+      "file": "en-us/coun.mp3"
     },
     "country": {
       "text": "country",
@@ -154,33 +286,101 @@
       "text": "crop",
       "file": "en-us/crop.mp3"
     },
+    "cul": {
+      "text": "cul",
+      "file": "en-us/cul.mp3"
+    },
+    "cult": {
+      "text": "cult",
+      "file": "en-us/cult.mp3"
+    },
     "culture": {
       "text": "culture",
       "file": "en-us/culture.mp3"
+    },
+    "cycle": {
+      "text": "cycle",
+      "file": "en-us/cycle.mp3"
+    },
+    "d_c": {
+      "text": "D.C.",
+      "file": "en-us/d_c.mp3"
+    },
+    "day": {
+      "text": "Day",
+      "file": "en-us/day.mp3"
+    },
+    "de": {
+      "text": "de",
+      "file": "en-us/de.mp3"
+    },
+    "delhi": {
+      "text": "Delhi",
+      "file": "en-us/delhi.mp3"
     },
     "delicious": {
       "text": "delicious",
       "file": "en-us/delicious.mp3"
     },
+    "der": {
+      "text": "der",
+      "file": "en-us/der.mp3"
+    },
+    "di": {
+      "text": "di",
+      "file": "en-us/di.mp3"
+    },
+    "dif": {
+      "text": "dif",
+      "file": "en-us/dif.mp3"
+    },
     "difficult": {
       "text": "difficult",
       "file": "en-us/difficult.mp3"
     },
+    "dle": {
+      "text": "dle",
+      "file": "en-us/dle.mp3"
+    },
+    "do": {
+      "text": "do",
+      "file": "en-us/do.mp3"
+    },
+    "don": {
+      "text": "don",
+      "file": "en-us/don.mp3"
+    },
+    "dou": {
+      "text": "dou",
+      "file": "en-us/dou.mp3"
+    },
     "double": {
-      "text": "double",
+      "text": "Double",
       "file": "en-us/double.mp3"
     },
     "double_ninth_festival": {
       "text": "Double Ninth Festival",
       "file": "en-us/double_ninth_festival.mp3"
     },
+    "e": {
+      "text": "e",
+      "file": "en-us/e.mp3"
+    },
     "east": {
       "text": "east",
       "file": "en-us/east.mp3"
     },
+    "eight": {
+      "text": "eight",
+      "file": "en-us/eight.mp3"
+    },
     "eighth": {
       "text": "eighth",
       "file": "en-us/eighth.mp3"
+    },
+    "el": {
+      "text": "el",
+      "file": "en-us/el.mp3"
     },
     "elder": {
       "text": "elder",
@@ -190,13 +390,33 @@
       "text": "email",
       "file": "en-us/email.mp3"
     },
+    "er": {
+      "text": "er",
+      "file": "en-us/er.mp3"
+    },
+    "et": {
+      "text": "et",
+      "file": "en-us/et.mp3"
+    },
+    "eu": {
+      "text": "Eu",
+      "file": "en-us/eu.mp3"
+    },
     "europe": {
       "text": "Europe",
       "file": "en-us/europe.mp3"
     },
+    "eve": {
+      "text": "eve",
+      "file": "en-us/eve.mp3"
+    },
     "every": {
       "text": "every",
       "file": "en-us/every.mp3"
+    },
+    "excit": {
+      "text": "excit",
+      "file": "en-us/excit.mp3"
     },
     "exciting": {
       "text": "exciting",
@@ -206,17 +426,37 @@
       "text": "export",
       "file": "en-us/export.mp3"
     },
+    "fam": {
+      "text": "fam",
+      "file": "en-us/fam.mp3"
+    },
     "famous": {
       "text": "famous",
       "file": "en-us/famous.mp3"
+    },
+    "festival": {
+      "text": "Festival",
+      "file": "en-us/festival.mp3"
     },
     "few": {
       "text": "few",
       "file": "en-us/few.mp3"
     },
+    "fi": {
+      "text": "fi",
+      "file": "en-us/fi.mp3"
+    },
+    "fifteen": {
+      "text": "fifteen",
+      "file": "en-us/fifteen.mp3"
+    },
     "fifteenth": {
       "text": "fifteenth",
       "file": "en-us/fifteenth.mp3"
+    },
+    "fore": {
+      "text": "fore",
+      "file": "en-us/fore.mp3"
     },
     "france": {
       "text": "France",
@@ -226,6 +466,18 @@
       "text": "French",
       "file": "en-us/french.mp3"
     },
+    "ful": {
+      "text": "ful",
+      "file": "en-us/ful.mp3"
+    },
+    "gle": {
+      "text": "gle",
+      "file": "en-us/gle.mp3"
+    },
+    "gon": {
+      "text": "gon",
+      "file": "en-us/gon.mp3"
+    },
     "gondola": {
       "text": "gondola",
       "file": "en-us/gondola.mp3"
@@ -233,6 +485,18 @@
     "grow": {
       "text": "grow",
       "file": "en-us/grow.mp3"
+    },
+    "h": {
+      "text": "h",
+      "file": "en-us/h.mp3"
+    },
+    "har": {
+      "text": "har",
+      "file": "en-us/har.mp3"
+    },
+    "harm": {
+      "text": "harm",
+      "file": "en-us/harm.mp3"
     },
     "harmful": {
       "text": "harmful",
@@ -246,9 +510,17 @@
       "text": "harvest",
       "file": "en-us/harvest.mp3"
     },
+    "heav": {
+      "text": "heav",
+      "file": "en-us/heav.mp3"
+    },
     "heavy": {
       "text": "heavy",
       "file": "en-us/heavy.mp3"
+    },
+    "help": {
+      "text": "help",
+      "file": "en-us/help.mp3"
     },
     "helpful": {
       "text": "helpful",
@@ -258,6 +530,10 @@
       "text": "here",
       "file": "en-us/here.mp3"
     },
+    "high": {
+      "text": "high",
+      "file": "en-us/high.mp3"
+    },
     "high_speed_train": {
       "text": "high-speed train",
       "file": "en-us/high_speed_train.mp3"
@@ -265,6 +541,10 @@
     "hill": {
       "text": "hill",
       "file": "en-us/hill.mp3"
+    },
+    "his": {
+      "text": "his",
+      "file": "en-us/his.mp3"
     },
     "history": {
       "text": "history",
@@ -274,6 +554,14 @@
       "text": "hit",
       "file": "en-us/hit.mp3"
     },
+    "hockey": {
+      "text": "hockey",
+      "file": "en-us/hockey.mp3"
+    },
+    "home": {
+      "text": "home",
+      "file": "en-us/home.mp3"
+    },
     "hometown": {
       "text": "hometown",
       "file": "en-us/hometown.mp3"
@@ -281,6 +569,18 @@
     "hour": {
       "text": "hour",
       "file": "en-us/hour.mp3"
+    },
+    "i": {
+      "text": "i",
+      "file": "en-us/i.mp3"
+    },
+    "ian": {
+      "text": "ian",
+      "file": "en-us/ian.mp3"
+    },
+    "ice": {
+      "text": "ice",
+      "file": "en-us/ice.mp3"
     },
     "ice_hockey": {
       "text": "ice hockey",
@@ -294,6 +594,10 @@
       "text": "important",
       "file": "en-us/important.mp3"
     },
+    "in": {
+      "text": "In",
+      "file": "en-us/in.mp3"
+    },
     "india": {
       "text": "India",
       "file": "en-us/india.mp3"
@@ -301,6 +605,22 @@
     "indian": {
       "text": "Indian",
       "file": "en-us/indian.mp3"
+    },
+    "ing": {
+      "text": "ing",
+      "file": "en-us/ing.mp3"
+    },
+    "is": {
+      "text": "is",
+      "file": "en-us/is.mp3"
+    },
+    "ish": {
+      "text": "ish",
+      "file": "en-us/ish.mp3"
+    },
+    "it": {
+      "text": "It",
+      "file": "en-us/it.mp3"
     },
     "italian": {
       "text": "Italian",
@@ -310,6 +630,14 @@
       "text": "Italy",
       "file": "en-us/italy.mp3"
     },
+    "ject": {
+      "text": "ject",
+      "file": "en-us/ject.mp3"
+    },
+    "jour": {
+      "text": "jour",
+      "file": "en-us/jour.mp3"
+    },
     "journey": {
       "text": "journey",
       "file": "en-us/journey.mp3"
@@ -318,25 +646,77 @@
       "text": "keep",
       "file": "en-us/keep.mp3"
     },
+    "la": {
+      "text": "la",
+      "file": "en-us/la.mp3"
+    },
+    "lar": {
+      "text": "lar",
+      "file": "en-us/lar.mp3"
+    },
     "leave": {
       "text": "leave",
       "file": "en-us/leave.mp3"
+    },
+    "les": {
+      "text": "les",
+      "file": "en-us/les.mp3"
     },
     "lesson": {
       "text": "lesson",
       "file": "en-us/lesson.mp3"
     },
+    "li": {
+      "text": "li",
+      "file": "en-us/li.mp3"
+    },
+    "lia": {
+      "text": "lia",
+      "file": "en-us/lia.mp3"
+    },
+    "lic": {
+      "text": "lic",
+      "file": "en-us/lic.mp3"
+    },
     "life": {
       "text": "life",
       "file": "en-us/life.mp3"
+    },
+    "lig": {
+      "text": "lig",
+      "file": "en-us/lig.mp3"
+    },
+    "lon": {
+      "text": "Lon",
+      "file": "en-us/lon.mp3"
     },
     "london": {
       "text": "London",
       "file": "en-us/london.mp3"
     },
+    "lunar": {
+      "text": "lunar",
+      "file": "en-us/lunar.mp3"
+    },
     "lunar_calendar": {
       "text": "lunar calendar",
       "file": "en-us/lunar_calendar.mp3"
+    },
+    "ly": {
+      "text": "ly",
+      "file": "en-us/ly.mp3"
+    },
+    "lym": {
+      "text": "lym",
+      "file": "en-us/lym.mp3"
+    },
+    "mahal": {
+      "text": "Mahal",
+      "file": "en-us/mahal.mp3"
+    },
+    "mail": {
+      "text": "mail",
+      "file": "en-us/mail.mp3"
     },
     "map": {
       "text": "map",
@@ -346,9 +726,17 @@
       "text": "maths",
       "file": "en-us/maths.mp3"
     },
+    "med": {
+      "text": "med",
+      "file": "en-us/med.mp3"
+    },
     "medal": {
       "text": "medal",
       "file": "en-us/medal.mp3"
+    },
+    "mid": {
+      "text": "Mid",
+      "file": "en-us/mid.mp3"
     },
     "mid_autumn_festival": {
       "text": "Mid-Autumn Festival",
@@ -357,6 +745,10 @@
     "middle": {
       "text": "middle",
       "file": "en-us/middle.mp3"
+    },
+    "min": {
+      "text": "min",
+      "file": "en-us/min.mp3"
     },
     "miss": {
       "text": "miss",
@@ -370,6 +762,10 @@
       "text": "moon",
       "file": "en-us/moon.mp3"
     },
+    "more": {
+      "text": "more",
+      "file": "en-us/more.mp3"
+    },
     "more_than": {
       "text": "more than",
       "file": "en-us/more_than.mp3"
@@ -377,6 +773,10 @@
     "most": {
       "text": "most",
       "file": "en-us/most.mp3"
+    },
+    "mu": {
+      "text": "mu",
+      "file": "en-us/mu.mp3"
     },
     "much": {
       "text": "much",
@@ -386,13 +786,29 @@
       "text": "music",
       "file": "en-us/music.mp3"
     },
+    "my": {
+      "text": "my",
+      "file": "en-us/my.mp3"
+    },
     "myself": {
       "text": "myself",
       "file": "en-us/myself.mp3"
     },
+    "na": {
+      "text": "na",
+      "file": "en-us/na.mp3"
+    },
+    "nev": {
+      "text": "nev",
+      "file": "en-us/nev.mp3"
+    },
     "never": {
       "text": "never",
       "file": "en-us/never.mp3"
+    },
+    "new": {
+      "text": "New",
+      "file": "en-us/new.mp3"
     },
     "new_delhi": {
       "text": "New Delhi",
@@ -402,13 +818,37 @@
       "text": "New York",
       "file": "en-us/new_york.mp3"
     },
+    "news": {
+      "text": "news",
+      "file": "en-us/news.mp3"
+    },
     "newspaper": {
       "text": "newspaper",
       "file": "en-us/newspaper.mp3"
     },
+    "ney": {
+      "text": "ney",
+      "file": "en-us/ney.mp3"
+    },
+    "ni": {
+      "text": "ni",
+      "file": "en-us/ni.mp3"
+    },
+    "nient": {
+      "text": "nient",
+      "file": "en-us/nient.mp3"
+    },
+    "nin": {
+      "text": "nin",
+      "file": "en-us/nin.mp3"
+    },
     "ninth": {
-      "text": "ninth",
+      "text": "Ninth",
       "file": "en-us/ninth.mp3"
+    },
+    "nis": {
+      "text": "nis",
+      "file": "en-us/nis.mp3"
     },
     "north": {
       "text": "north",
@@ -418,6 +858,14 @@
       "text": "North America",
       "file": "en-us/north_america.mp3"
     },
+    "ny": {
+      "text": "ny",
+      "file": "en-us/ny.mp3"
+    },
+    "o": {
+      "text": "o",
+      "file": "en-us/o.mp3"
+    },
     "oceania": {
       "text": "Oceania",
       "file": "en-us/oceania.mp3"
@@ -426,9 +874,17 @@
       "text": "Olympics",
       "file": "en-us/olympics.mp3"
     },
+    "on": {
+      "text": "on",
+      "file": "en-us/on.mp3"
+    },
     "only": {
       "text": "only",
       "file": "en-us/only.mp3"
+    },
+    "oth": {
+      "text": "oth",
+      "file": "en-us/oth.mp3"
     },
     "other": {
       "text": "other",
@@ -442,6 +898,14 @@
       "text": "ourselves",
       "file": "en-us/ourselves.mp3"
     },
+    "ous": {
+      "text": "ous",
+      "file": "en-us/ous.mp3"
+    },
+    "out": {
+      "text": "out",
+      "file": "en-us/out.mp3"
+    },
     "over": {
       "text": "over",
       "file": "en-us/over.mp3"
@@ -449,6 +913,14 @@
     "p_m": {
       "text": "p.m.",
       "file": "en-us/p_m.mp3"
+    },
+    "paper": {
+      "text": "paper",
+      "file": "en-us/paper.mp3"
+    },
+    "par": {
+      "text": "Par",
+      "file": "en-us/par.mp3"
     },
     "paris": {
       "text": "Paris",
@@ -458,9 +930,17 @@
       "text": "PE",
       "file": "en-us/pe.mp3"
     },
+    "phy": {
+      "text": "phy",
+      "file": "en-us/phy.mp3"
+    },
     "pick": {
       "text": "pick",
       "file": "en-us/pick.mp3"
+    },
+    "pics": {
+      "text": "pics",
+      "file": "en-us/pics.mp3"
     },
     "place": {
       "text": "place",
@@ -470,25 +950,53 @@
       "text": "plan",
       "file": "en-us/plan.mp3"
     },
+    "pop": {
+      "text": "pop",
+      "file": "en-us/pop.mp3"
+    },
     "popular": {
       "text": "popular",
       "file": "en-us/popular.mp3"
+    },
+    "port": {
+      "text": "port",
+      "file": "en-us/port.mp3"
+    },
+    "post": {
+      "text": "post",
+      "file": "en-us/post.mp3"
     },
     "poster": {
       "text": "poster",
       "file": "en-us/poster.mp3"
     },
+    "prac": {
+      "text": "prac",
+      "file": "en-us/prac.mp3"
+    },
     "practice": {
       "text": "practice",
       "file": "en-us/practice.mp3"
+    },
+    "pub": {
+      "text": "pub",
+      "file": "en-us/pub.mp3"
     },
     "public": {
       "text": "public",
       "file": "en-us/public.mp3"
     },
+    "ques": {
+      "text": "ques",
+      "file": "en-us/ques.mp3"
+    },
     "question": {
       "text": "question",
       "file": "en-us/question.mp3"
+    },
+    "qui": {
+      "text": "qui",
+      "file": "en-us/qui.mp3"
     },
     "quickly": {
       "text": "quickly",
@@ -501,6 +1009,18 @@
     "quite": {
       "text": "quite",
       "file": "en-us/quite.mp3"
+    },
+    "ra": {
+      "text": "ra",
+      "file": "en-us/ra.mp3"
+    },
+    "re": {
+      "text": "re",
+      "file": "en-us/re.mp3"
+    },
+    "real": {
+      "text": "real",
+      "file": "en-us/real.mp3"
     },
     "really": {
       "text": "really",
@@ -518,9 +1038,17 @@
       "text": "reuse",
       "file": "en-us/reuse.mp3"
     },
+    "ri": {
+      "text": "ri",
+      "file": "en-us/ri.mp3"
+    },
     "ride": {
       "text": "ride",
       "file": "en-us/ride.mp3"
+    },
+    "river": {
+      "text": "River",
+      "file": "en-us/river.mp3"
     },
     "river_thames": {
       "text": "River Thames",
@@ -534,17 +1062,45 @@
       "text": "Rome",
       "file": "en-us/rome.mp3"
     },
+    "rope": {
+      "text": "rope",
+      "file": "en-us/rope.mp3"
+    },
+    "rub": {
+      "text": "rub",
+      "file": "en-us/rub.mp3"
+    },
     "rubbish": {
       "text": "rubbish",
       "file": "en-us/rubbish.mp3"
+    },
+    "rug": {
+      "text": "rug",
+      "file": "en-us/rug.mp3"
     },
     "rugby": {
       "text": "rugby",
       "file": "en-us/rugby.mp3"
     },
+    "ry": {
+      "text": "ry",
+      "file": "en-us/ry.mp3"
+    },
     "say": {
       "text": "say",
       "file": "en-us/say.mp3"
+    },
+    "self": {
+      "text": "self",
+      "file": "en-us/self.mp3"
+    },
+    "selves": {
+      "text": "selves",
+      "file": "en-us/selves.mp3"
+    },
+    "ser": {
+      "text": "ser",
+      "file": "en-us/ser.mp3"
     },
     "service": {
       "text": "service",
@@ -554,9 +1110,25 @@
       "text": "set",
       "file": "en-us/set.mp3"
     },
+    "sia": {
+      "text": "sia",
+      "file": "en-us/sia.mp3"
+    },
+    "sic": {
+      "text": "sic",
+      "file": "en-us/sic.mp3"
+    },
+    "sin": {
+      "text": "sin",
+      "file": "en-us/sin.mp3"
+    },
     "single": {
       "text": "single",
       "file": "en-us/single.mp3"
+    },
+    "ski": {
+      "text": "ski",
+      "file": "en-us/ski.mp3"
     },
     "skiing": {
       "text": "skiing",
@@ -565,6 +1137,10 @@
     "slow": {
       "text": "slow",
       "file": "en-us/slow.mp3"
+    },
+    "solar": {
+      "text": "solar",
+      "file": "en-us/solar.mp3"
     },
     "solar_term": {
       "text": "solar term",
@@ -578,6 +1154,10 @@
       "text": "something",
       "file": "en-us/something.mp3"
     },
+    "son": {
+      "text": "son",
+      "file": "en-us/son.mp3"
+    },
     "sort": {
       "text": "sort",
       "file": "en-us/sort.mp3"
@@ -590,13 +1170,25 @@
       "text": "speak",
       "file": "en-us/speak.mp3"
     },
+    "speed": {
+      "text": "speed",
+      "file": "en-us/speed.mp3"
+    },
     "stay": {
       "text": "stay",
       "file": "en-us/stay.mp3"
     },
+    "store": {
+      "text": "store",
+      "file": "en-us/store.mp3"
+    },
     "store_up": {
       "text": "store up",
       "file": "en-us/store_up.mp3"
+    },
+    "sub": {
+      "text": "sub",
+      "file": "en-us/sub.mp3"
     },
     "subject": {
       "text": "subject",
@@ -605,6 +1197,18 @@
     "sure": {
       "text": "sure",
       "file": "en-us/sure.mp3"
+    },
+    "sweeping": {
+      "text": "sweeping",
+      "file": "en-us/sweeping.mp3"
+    },
+    "ta": {
+      "text": "ta",
+      "file": "en-us/ta.mp3"
+    },
+    "taj": {
+      "text": "Taj",
+      "file": "en-us/taj.mp3"
     },
     "taj_mahal": {
       "text": "Taj Mahal",
@@ -618,6 +1222,14 @@
       "text": "take out",
       "file": "en-us/take_out.mp3"
     },
+    "tal": {
+      "text": "tal",
+      "file": "en-us/tal.mp3"
+    },
+    "tax": {
+      "text": "tax",
+      "file": "en-us/tax.mp3"
+    },
     "taxi": {
       "text": "taxi",
       "file": "en-us/taxi.mp3"
@@ -626,9 +1238,41 @@
       "text": "team",
       "file": "en-us/team.mp3"
     },
+    "teer": {
+      "text": "teer",
+      "file": "en-us/teer.mp3"
+    },
+    "ten": {
+      "text": "ten",
+      "file": "en-us/ten.mp3"
+    },
     "tennis": {
       "text": "tennis",
       "file": "en-us/tennis.mp3"
+    },
+    "ter": {
+      "text": "ter",
+      "file": "en-us/ter.mp3"
+    },
+    "term": {
+      "text": "term",
+      "file": "en-us/term.mp3"
+    },
+    "th": {
+      "text": "th",
+      "file": "en-us/th.mp3"
+    },
+    "thames": {
+      "text": "Thames",
+      "file": "en-us/thames.mp3"
+    },
+    "than": {
+      "text": "than",
+      "file": "en-us/than.mp3"
+    },
+    "the": {
+      "text": "the",
+      "file": "en-us/the.mp3"
     },
     "the_uk": {
       "text": "the UK",
@@ -646,17 +1290,53 @@
       "text": "thing",
       "file": "en-us/thing.mp3"
     },
+    "ti": {
+      "text": "ti",
+      "file": "en-us/ti.mp3"
+    },
+    "tice": {
+      "text": "tice",
+      "file": "en-us/tice.mp3"
+    },
+    "tion": {
+      "text": "tion",
+      "file": "en-us/tion.mp3"
+    },
+    "to": {
+      "text": "to",
+      "file": "en-us/to.mp3"
+    },
+    "tomb": {
+      "text": "Tomb",
+      "file": "en-us/tomb.mp3"
+    },
     "tomb_sweeping_day": {
       "text": "Tomb-sweeping Day",
       "file": "en-us/tomb_sweeping_day.mp3"
+    },
+    "ton": {
+      "text": "ton",
+      "file": "en-us/ton.mp3"
     },
     "top": {
       "text": "top",
       "file": "en-us/top.mp3"
     },
+    "tow": {
+      "text": "tow",
+      "file": "en-us/tow.mp3"
+    },
     "tower": {
       "text": "tower",
       "file": "en-us/tower.mp3"
+    },
+    "town": {
+      "text": "town",
+      "file": "en-us/town.mp3"
+    },
+    "tra": {
+      "text": "tra",
+      "file": "en-us/tra.mp3"
     },
     "tradition": {
       "text": "tradition",
@@ -678,29 +1358,89 @@
       "text": "trip",
       "file": "en-us/trip.mp3"
     },
+    "try": {
+      "text": "try",
+      "file": "en-us/try.mp3"
+    },
+    "ture": {
+      "text": "ture",
+      "file": "en-us/ture.mp3"
+    },
+    "ty": {
+      "text": "ty",
+      "file": "en-us/ty.mp3"
+    },
+    "u": {
+      "text": "u",
+      "file": "en-us/u.mp3"
+    },
+    "uk": {
+      "text": "UK",
+      "file": "en-us/uk.mp3"
+    },
+    "un": {
+      "text": "un",
+      "file": "en-us/un.mp3"
+    },
     "unusual": {
       "text": "unusual",
       "file": "en-us/unusual.mp3"
+    },
+    "up": {
+      "text": "up",
+      "file": "en-us/up.mp3"
     },
     "us": {
       "text": "us",
       "file": "en-us/us.mp3"
     },
+    "usual": {
+      "text": "usual",
+      "file": "en-us/usual.mp3"
+    },
     "usually": {
       "text": "usually",
       "file": "en-us/usually.mp3"
+    },
+    "ve": {
+      "text": "ve",
+      "file": "en-us/ve.mp3"
+    },
+    "veg": {
+      "text": "veg",
+      "file": "en-us/veg.mp3"
     },
     "vegetable": {
       "text": "vegetable",
       "file": "en-us/vegetable.mp3"
     },
+    "ven": {
+      "text": "Ven",
+      "file": "en-us/ven.mp3"
+    },
     "venice": {
       "text": "Venice",
       "file": "en-us/venice.mp3"
     },
+    "ver": {
+      "text": "ver",
+      "file": "en-us/ver.mp3"
+    },
+    "vest": {
+      "text": "vest",
+      "file": "en-us/vest.mp3"
+    },
+    "vice": {
+      "text": "vice",
+      "file": "en-us/vice.mp3"
+    },
     "view": {
       "text": "view",
       "file": "en-us/view.mp3"
+    },
+    "vol": {
+      "text": "vol",
+      "file": "en-us/vol.mp3"
     },
     "volunteer": {
       "text": "volunteer",
@@ -713,6 +1453,10 @@
     "want": {
       "text": "want",
       "file": "en-us/want.mp3"
+    },
+    "washington": {
+      "text": "Washington",
+      "file": "en-us/washington.mp3"
     },
     "washington_d_c": {
       "text": "Washington D.C.",
@@ -734,6 +1478,10 @@
       "text": "will",
       "file": "en-us/will.mp3"
     },
+    "won": {
+      "text": "won",
+      "file": "en-us/won.mp3"
+    },
     "wonder": {
       "text": "wonder",
       "file": "en-us/wonder.mp3"
@@ -745,6 +1493,14 @@
     "write": {
       "text": "write",
       "file": "en-us/write.mp3"
+    },
+    "y": {
+      "text": "y",
+      "file": "en-us/y.mp3"
+    },
+    "york": {
+      "text": "York",
+      "file": "en-us/york.mp3"
     }
   }
 }

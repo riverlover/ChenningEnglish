@@ -66,10 +66,22 @@ class TtsService {
 
   Future<void> _initSystemTts() async {
     try {
+      if (defaultTargetPlatform == TargetPlatform.android) {
+        try {
+          final engines = await _tts.getEngines;
+          if (engines is List &&
+              engines.map((e) => '$e').contains('com.google.android.tts')) {
+            await _tts.setEngine('com.google.android.tts');
+          }
+        } catch (e) {
+          debugPrint('TtsService: engine select skipped ($e)');
+        }
+      }
       await _tts.setLanguage('en-US');
       await _tts.setSpeechRate(0.42);
       await _tts.setVolume(1.0);
       await _tts.setPitch(1.0);
+      await _tts.awaitSpeakCompletion(true);
       try {
         await _tts.setIosAudioCategory(
           IosTextToSpeechAudioCategory.playback,
